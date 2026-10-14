@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { parse } from "node-html-parser";
 import { assertTransliteration, transliterate } from "./itrans.mjs";
 
@@ -120,12 +121,28 @@ function verseKeys(sloka) {
   return keys;
 }
 
+function classifyKeys(rawKeys, prefix) {
+  const [book, chapter] = prefix.split(".");
+  const doubledChapter = `${book}${chapter}`;
+  const local = [];
+  let foreign = 0;
+  for (const key of rawKeys) {
+    const [keyBook, keyChapter, ...rest] = key.split(".");
+    const verse = rest.join(".");
+    const padaBase = (value) => value.replace(/([0-9])[a-z]+$/i, "$1");
+    if (`${keyBook}.${keyChapter}` === prefix) local.push(padaBase(key));
+    else if (keyBook === book && keyChapter === doubledChapter) local.push(padaBase(`${prefix}.${verse}`));
+    else foreign += 1;
+  }
+  return { local: [...new Set(local)], foreign };
+}
+
 function cleanDevanagari(sloka) {
   return sloka
     .split("\n")
     .map((line) => line.replace(/\s+/g, " ").trim())
     .filter(Boolean)
-    .map((line) => line.replace(/\s*[०-९0-9]+(?:\s*[-–]\s*[०-९0-9]+)+(?:\s*[a-zA-Z])?\s*$/u, "").trim())
+    .map((line) => line.replace(/\s*(?:\|\||॥)?\s*[०-९0-9]+(?:\s*[-–]\s*[०-९0-9]+)*(?:\s*[a-zA-Z])?\s*$/u, "").trim())
     .filter(Boolean)
     .join("\n");
 }
@@ -133,7 +150,7 @@ function cleanDevanagari(sloka) {
 function cleanItransSloka(sloka) {
   return sloka
     .split("\n")
-    .map((line) => line.replace(/\s+/g, " ").replace(/\s*\d+\s*-\s*\d+\s*-\s*\d+[a-z]?\s*$/i, "").trim())
+    .map((line) => line.replace(/\s+/g, " ").replace(/\s*(?:\|\|)?\s*\d+(?:\s*-\s*\d+){0,2}[a-z]?\s*$/i, "").trim())
     .filter(Boolean)
     .join("\n");
 }
@@ -144,7 +161,7 @@ function cleanTranslation(value) {
     .trim();
 }
 
-function walkPage(html, slokaClass) {
+function walkPage(html, slokaClass, prefix = "1.1") {
   const root = parse(html);
   const intro = [];
   const blocks = [];
@@ -161,19 +178,27 @@ function walkPage(html, slokaClass) {
       continue;
     }
     if (!started) {
-      if (className.includes("tat") || className.includes("comment")) {
+      if (className.includes("tat") || className.includes("comment") || /(?:^|\s)txt(?:\s|$)/.test(className)) {
         const text = textWithBreaks(element);
         if (text) intro.push(text);
       }
-      continue;
     }
-    if (!current) continue;
-    if (className.includes(slokaClass) || (slokaClass === "SanSloka" && className.includes("SanSloka"))) {
+    const isSloka = className.includes(slokaClass) || (slokaClass === "SanSloka" && className.includes("SanSloka"));
+    if (isSloka) {
       const text = textWithBreaks(element);
       const keep = slokaClass === "ItrSloka" ? /[A-Za-z]/.test(text) : /[\u0900-\u097F]/.test(text);
-      if (keep) current.sloka = current.sloka ? `${current.sloka}\n${text}` : text;
+      if (keep) {
+        const blockHasBody = current && (current.pratipada || current.translations.length || current.notes.length);
+        if (!current || (current.sloka && blockHasBody)) {
+          if (current) blocks.push(current);
+          current = { sloka: "", pratipada: null, translations: [], notes: [], citationKeys: [] };
+        }
+        current.sloka = current.sloka ? `${current.sloka}\n${text}` : text;
+        started = true;
+      }
       continue;
     }
+    if (!started || !current) continue;
     if (className.includes("pratipada")) {
       current.pratipada = element;
       continue;
@@ -196,16 +221,19 @@ function walkPage(html, slokaClass) {
   for (const block of blocks) {
     const glosses = block.pratipada ? parseGlosses(block.pratipada) : [];
     const labelHint = block.pratipada ? (block.pratipada.text.match(/^\s*((?:\d+[a-z]?)(?:\s*,\s*\d+[a-z]?)*)/) || [])[1] : null;
-    let keys = verseKeys(block.sloka);
-    if (!keys.length) keys = block.citationKeys ?? [];
+    const fromSloka = classifyKeys(verseKeys(block.sloka), prefix);
+    const fromCitation = classifyKeys(block.citationKeys ?? [], prefix);
+    let keys = [...fromSloka.local];
+    if (!keys.length) keys = [...fromCitation.local];
     if (!keys.length && labelHint) {
       keys = labelHint
         .split(",")
         .map((part) => part.trim().match(/^(\d+)([a-z])?$/))
         .filter(Boolean)
-        .map((match) => `1.1.${Number(match[1])}${match[2] ?? ""}`);
+        .map((match) => `${prefix}.${Number(match[1])}${match[2] ?? ""}`);
     }
-    if (keys.length > 4) {
+    keys.sort((a, b) => parseInt(a.split(".")[2], 10) - parseInt(b.split(".")[2], 10) || a.localeCompare(b));
+    if (fromSloka.foreign > 0 && verseKeys(block.sloka).length > 4) {
       if (block.sloka) closing.push(block.sloka);
       for (const note of block.notes) closing.push(note);
       continue;
@@ -395,23 +423,40 @@ function finishGloss(gloss) {
   };
 }
 
-function build() {
-  const sans = walkPage(fs.readFileSync(sansPath, "utf8"), "SanSloka");
-  const itrans = walkPage(fs.readFileSync(itransPath, "utf8"), "ItrSloka");
+export function extractSarga({ sarga, title, sansFile, itransFile, outFile, quiet = false }) {
+  const prefix = `1.${sarga}`;
+  const sans = walkPage(fs.readFileSync(sansFile, "utf8"), "SanSloka", prefix);
+  const itrans = walkPage(fs.existsSync(itransFile) ? fs.readFileSync(itransFile, "utf8") : "", "ItrSloka", prefix);
   const byKey = new Map();
-  const ensure = (keys) => {
-    const id = keys[0];
+  const claim = (keys, side, text) => {
+    let id = keys[0];
     if (!id) return null;
-    if (!byKey.has(id)) {
-      byKey.set(id, { keys, roman: "", devanagari: "", glosses: [], translation: "", notes: [] });
+    let slot = byKey.get(id);
+    if (slot && text && slot[side] && slot[side] !== text) {
+      let letter = "b";
+      while (letter <= "f") {
+        const nextId = `${keys[0]}${letter}`;
+        const next = byKey.get(nextId);
+        if (!next || !next[side] || next[side] === text) {
+          id = nextId;
+          keys = [id, ...keys.slice(1)];
+          slot = next;
+          break;
+        }
+        letter = String.fromCharCode(letter.charCodeAt(0) + 1);
+      }
     }
-    const slot = byKey.get(id);
-    if (keys.length > slot.keys.length && keys.length <= 4) slot.keys = keys;
+    if (!slot) {
+      slot = { keys, roman: "", devanagari: "", glosses: [], translation: "", notes: [] };
+      byKey.set(id, slot);
+    } else if (keys.length > slot.keys.length && classifyKeys(keys, prefix).foreign === 0) {
+      slot.keys = keys;
+    }
     return slot;
   };
 
   for (const roman of itrans.verses) {
-    const slot = ensure(roman.keys);
+    const slot = claim(roman.keys, "roman", roman.sloka);
     if (!slot) continue;
     if (roman.sloka && !slot.roman) slot.roman = roman.sloka;
     if (roman.glosses.length && slot.glosses.length === 0) slot.glosses = roman.glosses;
@@ -419,16 +464,16 @@ function build() {
     if (roman.notes.length && slot.notes.length === 0) slot.notes = roman.notes;
   }
   for (const verse of sans.verses) {
-    const slot = ensure(verse.keys);
+    const slot = claim(verse.keys, "devanagari", verse.sloka);
     if (!slot) continue;
-    if (verse.sloka) slot.devanagari = verse.sloka;
-    if (verse.translation) slot.translation = verse.translation;
-    if (verse.notes.length) slot.notes = verse.notes;
+    if (verse.sloka && !slot.devanagari) slot.devanagari = verse.sloka;
+    if (verse.translation && !slot.translation) slot.translation = verse.translation;
+    if (verse.notes.length && slot.notes.length === 0) slot.notes = verse.notes;
     if (verse.glosses.length && slot.glosses.length === 0) slot.glosses = verse.glosses;
   }
 
   const merged = [...byKey.values()]
-    .filter((slot) => slot.devanagari || slot.glosses.length)
+    .filter((slot) => /[।|]/.test(slot.devanagari) || /[।|]/.test(slot.roman))
     .map((slot) => {
       const aligned = alignGlosses(slot.roman, slot.glosses);
       const iastLines = cleanItransSloka(slot.roman)
@@ -456,37 +501,57 @@ function build() {
 
   const document = {
     kanda: "bala",
-    sarga: 1,
-    title: "Narada briefs Valmiki about Rama and the Ramayana in a nutshell",
-    sourceUrl: "https://www.valmikiramayan.net/utf8/baala/sarga1/balasans1.htm",
-    romanUrl: "https://www.valmikiramayan.net/utf8/baala/sarga1/balaitrans1.htm",
+    sarga,
+    title,
+    sourceUrl: `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balasans${sarga}.htm`,
+    romanUrl: `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balaitrans${sarga}.htm`,
     translator: "Desiraju Hanumanta Rao",
     introduction: sans.intro,
     closing: sans.closing.filter((line, index, all) => line.length > 20 && all.indexOf(line) === index),
     verses: merged,
   };
 
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, `${JSON.stringify(document, null, 2)}\n`);
+  fs.mkdirSync(path.dirname(outFile), { recursive: true });
+  fs.writeFileSync(outFile, `${JSON.stringify(document, null, 2)}\n`);
 
-  console.log(`verses ${merged.length}`);
-  console.log(`glosses ${glossCount}`);
-  console.log(`unplaced ${unplaced.length}`);
-  console.log(unplaced.slice(0, 40).join("\n"));
-  const first = merged.find((verse) => verse.id === "1.1.1") ?? merged[0];
-  console.log(`--- ${first.id} written order ---`);
-  console.log(
-    [...first.glosses]
-      .sort((a, b) => (a.verseIndex ?? 999) - (b.verseIndex ?? 999))
-      .map((gloss) => `${gloss.verseIndex ?? "-"} ${gloss.devanagari} = ${gloss.meaning}`)
-      .join("\n"),
-  );
+  const slokas = new Set(merged.flatMap((verse) => verse.numbers)).size;
+  if (quiet) {
+    console.log(`sarga ${sarga}: ${slokas} slokas, ${merged.length} blocks, ${unplaced.length} glosses unplaced`);
+  } else {
+    console.log(`verses ${merged.length}`);
+    console.log(`glosses ${glossCount}`);
+    console.log(`unplaced ${unplaced.length}`);
+    console.log(unplaced.slice(0, 40).join("\n"));
+    const first = merged[0];
+    if (first) {
+      console.log(`--- ${first.id} written order ---`);
+      console.log(
+        [...first.glosses]
+          .sort((a, b) => (a.verseIndex ?? 999) - (b.verseIndex ?? 999))
+          .map((gloss) => `${gloss.verseIndex ?? "-"} ${gloss.devanagari} = ${gloss.meaning}`)
+          .join("\n"),
+      );
+    }
+  }
+  return { slokas, blocks: merged.length, unplaced: unplaced.length };
 }
 
-const tempSans = path.join(process.env.TEMP ?? "", "balasans1.htm");
-const tempItrans = path.join(process.env.TEMP ?? "", "balaitrans1.htm");
-fs.mkdirSync(sourceDir, { recursive: true });
-if (!fs.existsSync(sansPath) && fs.existsSync(tempSans)) fs.copyFileSync(tempSans, sansPath);
-if (!fs.existsSync(itransPath) && fs.existsSync(tempItrans)) fs.copyFileSync(tempItrans, itransPath);
+const invokedDirectly = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
 
-build();
+if (invokedDirectly) {
+  const sarga = Number(process.argv[2] || 1);
+  const catalog = JSON.parse(fs.readFileSync(path.resolve("public/content/catalog.json"), "utf8"));
+  const info = catalog.sargas.find((item) => item.kanda === "bala" && item.number === sarga);
+  const tempSans = path.join(process.env.TEMP ?? "", "balasans1.htm");
+  const tempItrans = path.join(process.env.TEMP ?? "", "balaitrans1.htm");
+  fs.mkdirSync(sourceDir, { recursive: true });
+  if (sarga === 1 && !fs.existsSync(sansPath) && fs.existsSync(tempSans)) fs.copyFileSync(tempSans, sansPath);
+  if (sarga === 1 && !fs.existsSync(itransPath) && fs.existsSync(tempItrans)) fs.copyFileSync(tempItrans, itransPath);
+  extractSarga({
+    sarga,
+    title: info?.title ?? `Sarga ${sarga}`,
+    sansFile: path.join(sourceDir, `bala-${sarga}-sans.htm`),
+    itransFile: path.join(sourceDir, `bala-${sarga}-itrans.htm`),
+    outFile: path.resolve(`public/content/bala/${String(sarga).padStart(2, "0")}.json`),
+  });
+}
