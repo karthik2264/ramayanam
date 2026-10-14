@@ -423,8 +423,20 @@ function finishGloss(gloss) {
   };
 }
 
-export function extractSarga({ sarga, title, sansFile, itransFile, outFile, quiet = false }) {
-  const prefix = `1.${sarga}`;
+export function extractSarga({
+  kanda = "bala",
+  book = 1,
+  sarga,
+  title,
+  translator = "Desiraju Hanumanta Rao",
+  sansFile,
+  itransFile,
+  outFile,
+  sourceUrl,
+  romanUrl,
+  quiet = false,
+}) {
+  const prefix = `${book}.${sarga}`;
   const sans = walkPage(fs.readFileSync(sansFile, "utf8"), "SanSloka", prefix);
   const itrans = walkPage(fs.existsSync(itransFile) ? fs.readFileSync(itransFile, "utf8") : "", "ItrSloka", prefix);
   const byKey = new Map();
@@ -500,12 +512,12 @@ export function extractSarga({ sarga, title, sansFile, itransFile, outFile, quie
   );
 
   const document = {
-    kanda: "bala",
+    kanda,
     sarga,
     title,
-    sourceUrl: `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balasans${sarga}.htm`,
-    romanUrl: `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balaitrans${sarga}.htm`,
-    translator: "Desiraju Hanumanta Rao",
+    sourceUrl: sourceUrl ?? `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balasans${sarga}.htm`,
+    romanUrl: romanUrl ?? `https://www.valmikiramayan.net/utf8/baala/sarga${sarga}/balaitrans${sarga}.htm`,
+    translator,
     introduction: sans.intro,
     closing: sans.closing.filter((line, index, all) => line.length > 20 && all.indexOf(line) === index),
     verses: merged,
