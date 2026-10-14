@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { applyTheme, loadPrefs, savePrefs, type Prefs } from "../lib/prefs";
+import { InstallHint } from "./InstallHint";
 
 export type ReaderContext = {
   prefs: Prefs;
@@ -53,6 +54,7 @@ export function Shell() {
           {prefs.theme === "dark" ? "Light" : "Dark"}
         </button>
       </header>
+      <InstallHint />
       <main id="content">
         <Outlet context={{ prefs, updatePrefs: update } satisfies ReaderContext} />
       </main>

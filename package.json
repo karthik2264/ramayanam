@@ -10,6 +10,8 @@
     "extract": "node scripts/extract-sarga.mjs"
   },
   "dependencies": {
+    "@fontsource/literata": "^5.3.0",
+    "@fontsource/tiro-devanagari-hindi": "^5.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2"
@@ -20,6 +22,7 @@
     "@vitejs/plugin-react": "^4.5.2",
     "node-html-parser": "^7.0.1",
     "typescript": "^5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^2.0.0"
   }
 }
