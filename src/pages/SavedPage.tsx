@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { chapterPath, getLastProgress, listBookmarks, removeBookmark } from "../lib/db";
+import { DriveSync } from "../components/DriveSync";
+import { chapterPath, getLastProgress, listBookmarks, removeBookmark, subscribeReading } from "../lib/db";
 import type { Bookmark, Progress } from "../lib/types";
 
 export function SavedPage() {
@@ -8,8 +9,12 @@ export function SavedPage() {
   const [progress, setProgress] = useState<Progress | null>(null);
 
   useEffect(() => {
-    listBookmarks().then(setBookmarks).catch(() => setBookmarks([]));
-    getLastProgress().then(setProgress).catch(() => setProgress(null));
+    const refresh = () => {
+      listBookmarks().then(setBookmarks).catch(() => setBookmarks([]));
+      getLastProgress().then(setProgress).catch(() => setProgress(null));
+    };
+    refresh();
+    return subscribeReading(refresh);
   }, []);
 
   async function forget(verseId: string) {
@@ -20,7 +25,11 @@ export function SavedPage() {
   return (
     <div className="page">
       <h1>Saved</h1>
-      <p className="lede">Bookmarks and the last place you were reading stay in this browser.</p>
+      <p className="lede">
+        Bookmarks and the last place you were reading stay in this browser. Google Drive keeps the same copy when you
+        open the reader somewhere else.
+      </p>
+      <DriveSync />
       {progress ? (
         <Link className="continue" to={chapterPath(progress.kanda, progress.sarga, progress.verseId)}>
           <span>Last read</span>

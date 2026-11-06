@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { resumeDriveSync } from "../lib/driveSync";
 import { applyTheme, loadPrefs, savePrefs, type Prefs } from "../lib/prefs";
 import { InstallHint } from "./InstallHint";
 
@@ -18,6 +19,10 @@ export function Shell() {
   useEffect(() => {
     applyTheme(prefs.theme);
   }, [prefs.theme]);
+
+  useEffect(() => {
+    resumeDriveSync();
+  }, []);
 
   function update(patch: Partial<Prefs>) {
     setPrefs((current) => {

@@ -143,6 +143,31 @@ main { padding-bottom: 2rem; }
 }
 .continue span, .continue em { color: var(--ink-soft); font-style: normal; font-size: 0.92rem; }
 
+.drive {
+  display: grid;
+  gap: 0.65rem;
+  max-width: 40rem;
+  margin: 1.2rem 0 1.4rem;
+  padding: 0.9rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--lacquer);
+}
+.drive h2 { margin: 0; font-size: 1.15rem; }
+.drive p { margin: 0; }
+.drive code { font-family: Consolas, "Courier New", monospace; font-size: 0.86em; }
+.drive-actions, .drive-form { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+.drive button:disabled { opacity: 0.55; cursor: default; }
+.drive-form input {
+  flex: 1;
+  min-width: 14rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
 .kanda-list, .sarga-list, .results { list-style: none; padding: 0; margin: 1.2rem 0; }
 .kanda-list a, .sarga-list a, .sarga-pending, .results a {
   display: grid;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { loadCatalog } from "../lib/content";
-import { chapterPath, getLastProgress } from "../lib/db";
+import { chapterPath, getLastProgress, subscribeReading } from "../lib/db";
 import type { Catalog, Progress } from "../lib/types";
 
 export function HomePage() {
@@ -11,7 +11,11 @@ export function HomePage() {
 
   useEffect(() => {
     loadCatalog().then(setCatalog).catch((reason: Error) => setError(reason.message));
-    getLastProgress().then(setProgress).catch(() => setProgress(null));
+    const refresh = () => {
+      getLastProgress().then(setProgress).catch(() => setProgress(null));
+    };
+    refresh();
+    return subscribeReading(refresh);
   }, []);
 
   const ready = catalog?.sargas.filter((sarga) => sarga.available).length ?? 0;

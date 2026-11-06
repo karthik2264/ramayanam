@@ -80,3 +80,15 @@ export type Progress = {
   sargaTitle: string;
   updatedAt: number;
 };
+
+export type BookmarkTombstone = {
+  verseId: string;
+  deletedAt: number;
+};
+
+export type ReadingFile = {
+  version: 1;
+  bookmarks: Bookmark[];
+  progress: Progress[];
+  removedBookmarks: BookmarkTombstone[];
+};

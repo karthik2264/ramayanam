@@ -4,7 +4,7 @@ import { VerseCard } from "../components/VerseCard";
 import { RichText, anchorId } from "../components/RichText";
 import { useReader } from "../components/Shell";
 import { findKanda, loadCatalog, loadSarga } from "../lib/content";
-import { listBookmarks, removeBookmark, saveBookmark, saveProgress } from "../lib/db";
+import { listBookmarks, removeBookmark, saveBookmark, saveProgress, subscribeReading } from "../lib/db";
 import type { Catalog, KandaId, SargaFile, Verse } from "../lib/types";
 
 function countSlokas(verses: Verse[]) {
@@ -42,13 +42,20 @@ export function SargaPage() {
       .catch((reason: Error) => {
         if (!cancelled) setError(reason.message);
       });
-    listBookmarks()
-      .then((rows) => {
-        if (!cancelled) setSaved(new Set(rows.map((row) => row.verseId)));
-      })
-      .catch(() => setSaved(new Set()));
+    const loadSaved = () => {
+      listBookmarks()
+        .then((rows) => {
+          if (!cancelled) setSaved(new Set(rows.map((row) => row.verseId)));
+        })
+        .catch(() => {
+          if (!cancelled) setSaved(new Set());
+        });
+    };
+    loadSaved();
+    const unsubscribe = subscribeReading(loadSaved);
     return () => {
       cancelled = true;
+      unsubscribe();
     };
   }, [kandaId, number]);
 
