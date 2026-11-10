@@ -1,0 +1,59 @@
+name: Deploy React Frontend to S3
+
+on:
+  push:
+    branches:
+      - release/**
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: 'production'
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build React App
+        run: |
+          echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
+          echo "Building for production (vite --mode production, loads .env.production)"
+          npm run build:production
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Only dist/assets/ has content-hashed filenames, so only it is safe to cache forever.
+      # Uploaded first so new index.html / sw.js never reference files that aren't there yet.
+      - name: Upload hashed assets (long cache)
+        run: |
+          aws s3 sync dist/assets/ s3://${{ secrets.S3_BUCKET }}/assets/ \
+            --delete \
+            --cache-control "public,max-age=31536000,immutable"
+
+      # Everything else (index.html, sw.js, registerSW.js, workbox-*.js, manifest,
+      # content/*.json, icons) keeps a stable name and must be revalidated on every load.
+      - name: Upload non-hashed files (no cache)
+        run: |
+          aws s3 sync dist/ s3://${{ secrets.S3_BUCKET }}/ \
+            --delete \
+            --exclude "assets/*" \
+            --cache-control "no-cache,must-revalidate"
+
+      # Optional safety invalidation
+      # - name: Invalidate CloudFront
+      #   run: |
+      #     aws cloudfront create-invalidation \
+      #       --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+      #       --paths "/index.html"

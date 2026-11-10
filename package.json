@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "build:production": "tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
     "extract": "node scripts/extract-sarga.mjs"
   },
