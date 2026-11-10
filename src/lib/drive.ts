@@ -42,7 +42,7 @@ let gisPromise: Promise<void> | null = null;
 let tokenClient: TokenClient | null = null;
 let clientFor = "";
 let pending: ((response: TokenResponse) => void) | null = null;
-let pendingError: ((message: string) => void) | null = null;
+let pendingError: ((error: Error) => void) | null = null;
 let accessToken = "";
 let expiresAt = 0;
 
@@ -135,7 +135,7 @@ async function client(clientId: string) {
       const reject = pendingError;
       pending = null;
       pendingError = null;
-      reject?.(error.message || error.type || "Google sign-in did not finish");
+      reject?.(new Error(`${error.type || "sign_in_failed"}: ${error.message || "Google sign-in did not finish"}`));
     },
   });
   return tokenClient;
@@ -330,5 +330,17 @@ export function needsConsent(error: unknown) {
     message.includes("consent_required") ||
     message.includes("login_required") ||
     message.includes("sign in again")
+  );
+}
+
+/** True when sync stopped only because Google needs a click from the user to hand out a new token. */
+export function needsUserTap(error: unknown) {
+  const message = (error instanceof Error ? error.message : "").toLowerCase();
+  return (
+    needsConsent(error) ||
+    message.includes("popup_failed_to_open") ||
+    message.includes("popup_closed") ||
+    message.includes("401") ||
+    message.includes("invalid authentication")
   );
 }

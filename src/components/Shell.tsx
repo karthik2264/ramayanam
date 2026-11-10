@@ -1,8 +1,9 @@
 import { Link, NavLink, Outlet, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { resumeDriveSync } from "../lib/driveSync";
+import { resumeDriveSync, watchDriveReturn } from "../lib/driveSync";
 import { applyTheme, loadPrefs, savePrefs, type Prefs } from "../lib/prefs";
 import { InstallHint } from "./InstallHint";
+import { SyncBanner } from "./SyncBanner";
 
 export type ReaderContext = {
   prefs: Prefs;
@@ -22,6 +23,7 @@ export function Shell() {
 
   useEffect(() => {
     resumeDriveSync();
+    return watchDriveReturn();
   }, []);
 
   function update(patch: Partial<Prefs>) {
@@ -59,6 +61,7 @@ export function Shell() {
           {prefs.theme === "dark" ? "Light" : "Dark"}
         </button>
       </header>
+      <SyncBanner />
       <InstallHint />
       <main id="content">
         <Outlet context={{ prefs, updatePrefs: update } satisfies ReaderContext} />

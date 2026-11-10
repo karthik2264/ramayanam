@@ -8,6 +8,7 @@ import {
   markDriveConnected,
   markDriveSignedOut,
   needsConsent,
+  needsUserTap,
   readDriveReading,
   writeDriveReading,
 } from "./drive";
@@ -19,6 +20,8 @@ export type DriveStatus = {
   phase: DrivePhase;
   message: string;
   syncedAt: number | null;
+  /** Sync is paused until the user clicks, because the browser will only open Google's token window after a click. */
+  needsTap: boolean;
 };
 
 const listeners = new Set<(status: DriveStatus) => void>();
@@ -26,6 +29,7 @@ let status: DriveStatus = {
   phase: isDriveConnected() ? "ready" : "idle",
   message: "",
   syncedAt: lastSyncedAt(),
+  needsTap: false,
 };
 let timer = 0;
 let running = false;
@@ -49,7 +53,7 @@ export function subscribeDriveStatus(listener: (status: DriveStatus) => void) {
 
 export function signOutDrive() {
   markDriveSignedOut();
-  publish({ phase: "idle", message: "Signed out on this browser. The Drive file is still there.", syncedAt: status.syncedAt });
+  publish({ phase: "idle", message: "Signed out on this browser. The Drive file is still there.", syncedAt: status.syncedAt, needsTap: false });
 }
 
 async function pushReading(interactive: boolean) {
@@ -66,7 +70,7 @@ async function pushReading(interactive: boolean) {
   if (canonicalReading(merged) !== canonicalReading(local)) await replaceReading(merged);
   const syncedAt = Date.now();
   markDriveConnected(syncedAt);
-  publish({ phase: "ready", message: "Saved to My Drive / Ramayanam / reading.json.", syncedAt });
+  publish({ phase: "ready", message: "Saved to My Drive / Ramayanam / reading.json.", syncedAt, needsTap: false });
 }
 
 export async function syncDrive(interactive: boolean) {
@@ -75,13 +79,19 @@ export async function syncDrive(interactive: boolean) {
     return;
   }
   running = true;
-  publish({ phase: "working", message: "Syncing with Google Drive…", syncedAt: status.syncedAt });
+  publish({ phase: "working", message: "Syncing with Google Drive…", syncedAt: status.syncedAt, needsTap: false });
   try {
     await pushReading(interactive);
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
     if (message.includes("401") || message.toLowerCase().includes("invalid authentication")) forgetDriveToken();
-    publish({ phase: "error", message: explainDriveError(error), syncedAt: status.syncedAt });
+    const needsTap = needsUserTap(error);
+    publish({
+      phase: "error",
+      message: needsTap ? "Sign in again to sync this browser." : explainDriveError(error),
+      syncedAt: status.syncedAt,
+      needsTap,
+    });
     throw error;
   } finally {
     running = false;
@@ -103,6 +113,8 @@ export async function syncNow() {
 
 export function scheduleDriveSync() {
   if (!isDriveConnected()) return;
+  // Without a click the browser blocks Google's window, so wait for the user. Their changes stay in this browser.
+  if (status.needsTap) return;
   window.clearTimeout(timer);
   timer = window.setTimeout(() => {
     void syncDrive(false).catch(() => {
@@ -113,12 +125,31 @@ export function scheduleDriveSync() {
 
 export function resumeDriveSync() {
   if (!isDriveConnected()) return;
-  void syncDrive(false).catch((error) => {
-    const message = explainDriveError(error);
-    if (message.includes("blocked") || message.includes("closed") || message.startsWith("Sign in again")) {
-      publish({ phase: "error", message: "Sign in again to sync this browser.", syncedAt: status.syncedAt });
-    }
+  void syncDrive(false).catch(() => {
+    // syncDrive already published the status, including needsTap.
   });
+}
+
+const RETURN_SYNC_GAP_MS = 30_000;
+
+/**
+ * Pull changes from other devices when the reader comes back to this tab or app, or gets
+ * back online. No click is needed while the token is still valid. When it has expired,
+ * the attempt fails quietly and the banner asks for a tap.
+ */
+export function watchDriveReturn() {
+  function onReturn() {
+    if (document.visibilityState !== "visible") return;
+    if (!isDriveConnected() || status.needsTap || status.phase === "working") return;
+    if (status.syncedAt && Date.now() - status.syncedAt < RETURN_SYNC_GAP_MS) return;
+    resumeDriveSync();
+  }
+  document.addEventListener("visibilitychange", onReturn);
+  window.addEventListener("online", onReturn);
+  return () => {
+    document.removeEventListener("visibilitychange", onReturn);
+    window.removeEventListener("online", onReturn);
+  };
 }
 
 onReadingWrite(() => scheduleDriveSync());
