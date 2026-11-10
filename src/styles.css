@@ -206,6 +206,8 @@ main { padding-bottom: 2rem; }
 }
 .credits section { max-width: 40rem; margin-bottom: 1.4rem; }
 .credits li { margin-bottom: 0.35rem; }
+.legal code { overflow-wrap: anywhere; }
+.footer-links { margin-top: 0.4rem; }
 .crumb { margin-bottom: 0.6rem; }
 
 .reader { width: min(760px, calc(100% - 1.4rem)); --scale: 1; }

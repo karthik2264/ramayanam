@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useState, type FormEvent } from "react";
 import { DRIVE_FILE_PATH, clientIdFromBuild, googleClientId, isDriveConnected, saveGoogleClientId } from "../lib/drive";
 import {
@@ -50,6 +51,10 @@ export function DriveSync() {
       <p className="quiet">
         Bookmarks and the last reading place are stored at {DRIVE_FILE_PATH}. Localhost, a CloudFront address, and a
         custom domain share that file when they use the same Google client.
+      </p>
+      <p className="quiet">
+        The reader can reach only the file it creates. It never sees the rest of your Drive. See the{" "}
+        <Link to="/privacy">privacy policy</Link> and <Link to="/terms">terms</Link>.
       </p>
       {clientId ? (
         <div className="drive-actions">

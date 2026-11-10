@@ -3,9 +3,11 @@ import { Shell } from "./components/Shell";
 import { CreditsPage } from "./pages/CreditsPage";
 import { HomePage } from "./pages/HomePage";
 import { KandaPage } from "./pages/KandaPage";
+import { PrivacyPage } from "./pages/PrivacyPage";
 import { SargaPage } from "./pages/SargaPage";
 import { SavedPage } from "./pages/SavedPage";
 import { SearchPage } from "./pages/SearchPage";
+import { TermsPage } from "./pages/TermsPage";
 
 export function App() {
   return (
@@ -18,6 +20,8 @@ export function App() {
           <Route path="search" element={<SearchPage />} />
           <Route path="saved" element={<SavedPage />} />
           <Route path="credits" element={<CreditsPage />} />
+          <Route path="privacy" element={<PrivacyPage />} />
+          <Route path="terms" element={<TermsPage />} />
           <Route path="*" element={<p className="page">That page is not on this desk.</p>} />
         </Route>
       </Routes>

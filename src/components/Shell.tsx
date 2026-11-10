@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useOutletContext } from "react-router-dom";
+import { Link, NavLink, Outlet, useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { resumeDriveSync } from "../lib/driveSync";
 import { applyTheme, loadPrefs, savePrefs, type Prefs } from "../lib/prefs";
@@ -67,6 +67,9 @@ export function Shell() {
         <p>
           Sanskrit of Vālmīki. English glosses and translation from{" "}
           <a href="https://www.valmikiramayan.net/">valmikiramayan.net</a>. Personal study copy.
+        </p>
+        <p className="footer-links">
+          <Link to="/privacy">Privacy policy</Link> · <Link to="/terms">Terms of service</Link>
         </p>
       </footer>
     </div>
