@@ -74,7 +74,9 @@ function search(catalog: Catalog | null, sargas: SargaFile[], query: string): Hi
         verse.devanagari,
         verse.iast,
         verse.translation,
-        ...verse.glosses.flatMap((gloss) => [gloss.devanagari, gloss.iast, gloss.itrans, gloss.meaning]),
+        verse.telugu ?? "",
+        verse.translationTe ?? "",
+        ...verse.glosses.flatMap((gloss) => [gloss.devanagari, gloss.iast, gloss.itrans, gloss.meaning, gloss.telugu ?? "", gloss.meaningTe ?? ""]),
       ]
         .join("\n")
         .toLowerCase();

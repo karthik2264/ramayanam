@@ -182,6 +182,11 @@ export function SargaPage() {
           <button type="button" onClick={() => updatePrefs({ showTransliteration: !prefs.showTransliteration })} aria-pressed={prefs.showTransliteration}>
             Transliteration
           </button>
+          {sarga.telugu ? (
+            <button type="button" lang="te" onClick={() => updatePrefs({ showTelugu: !prefs.showTelugu })} aria-pressed={prefs.showTelugu}>
+              తెలుగు
+            </button>
+          ) : null}
           <div className="segment" role="group" aria-label="Type size">
             {(["sm", "md", "lg"] as const).map((size) => (
               <button key={size} type="button" aria-pressed={prefs.fontScale === size} onClick={() => updatePrefs({ fontScale: size })}>
@@ -223,6 +228,7 @@ export function SargaPage() {
             verse={verse}
             wordOrder={prefs.wordOrder}
             showTransliteration={prefs.showTransliteration}
+            showTelugu={prefs.showTelugu}
             saved={saved.has(verse.id)}
             onToggleSave={() => toggleSave(verse)}
           />
@@ -239,7 +245,9 @@ export function SargaPage() {
         ) : null}
         <footer className="sarga-foot">
           <p>
-            English glosses and translation by {sarga.translator}. Source:{" "}
+            {sarga.telugu
+              ? `English translation by ${sarga.translator}. Word-by-word meanings (English and Telugu) and the Telugu translation were made afresh from the Sanskrit for this reader. Source text: `
+              : `English glosses and translation by ${sarga.translator}. Source: `}
             <a href={sarga.sourceUrl}>valmikiramayan.net</a>
           </p>
           {next ? (

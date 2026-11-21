@@ -32,6 +32,10 @@ export type Gloss = {
   iast: string;
   devanagari: string;
   meaning: string;
+  /** Telugu script spelling of the word. */
+  telugu?: string;
+  /** Telugu meaning, translated from the Sanskrit. */
+  meaningTe?: string;
   anvayaIndex: number;
   verseIndex: number | null;
 };
@@ -43,6 +47,10 @@ export type Verse = {
   devanagari: string;
   iast: string;
   translation: string;
+  /** The śloka in Telugu script. */
+  telugu?: string;
+  /** Telugu prose meaning (తాత్పర్యం), translated from the Sanskrit. */
+  translationTe?: string;
   notes: string[];
   glosses: Gloss[];
 };
@@ -57,6 +65,8 @@ export type SargaFile = {
   introduction: string[];
   closing: string[];
   verses: Verse[];
+  /** Present once Telugu has been added to this sarga. */
+  telugu?: { source: string; style: string };
 };
 
 export type Bookmark = {

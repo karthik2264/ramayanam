@@ -5,6 +5,7 @@ export type FontScale = "sm" | "md" | "lg";
 export type Prefs = {
   wordOrder: WordOrder;
   showTransliteration: boolean;
+  showTelugu: boolean;
   fontScale: FontScale;
   theme: ThemeName;
 };
@@ -19,6 +20,7 @@ export function defaultPrefs(): Prefs {
   return {
     wordOrder: "verse",
     showTransliteration: true,
+    showTelugu: true,
     fontScale: "md",
     theme: systemTheme(),
   };

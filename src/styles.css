@@ -247,6 +247,15 @@ main { padding-bottom: 2rem; }
   margin: 0.4rem 0 0.3rem;
 }
 .sloka p { margin: 0; }
+.sloka-te {
+  font-family: "Tiro Telugu", "Nirmala UI", Gautami, "Noto Sans Telugu", serif;
+  font-size: calc(1.5rem * var(--scale));
+  line-height: 1.65;
+  margin: 0.1rem 0 0.4rem;
+  color: var(--leaf);
+}
+.sloka-te p { margin: 0; }
+[lang="te"] { font-family: "Tiro Telugu", "Nirmala UI", Gautami, "Noto Sans Telugu", Literata, serif; }
 .iast {
   margin: 0.2rem 0 0.8rem;
   color: var(--ink-soft);
@@ -267,7 +276,19 @@ main { padding-bottom: 2rem; }
   color: var(--lacquer);
 }
 .gloss-iast { display: block; color: var(--ink-soft); font-size: 0.92rem; }
+.gloss-te {
+  display: block;
+  color: var(--leaf);
+  font-size: calc(1.08rem * var(--scale));
+  line-height: 1.5;
+}
 .gloss-mean { margin: 0; }
+.gloss-mean-te {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: calc(1.08rem * var(--scale));
+  line-height: 1.6;
+}
 .gloss-meta {
   display: inline-block;
   margin-left: 0.45rem;
@@ -277,6 +298,18 @@ main { padding-bottom: 2rem; }
 .unplaced { margin-top: 0.4rem; }
 .unplaced > p { color: var(--ink-soft); font-size: 0.92rem; }
 .translation { font-size: calc(1.05rem * var(--scale)); color: var(--ink); }
+.translation-te {
+  margin: 0.6rem 0 0;
+  padding: 0.55rem 0 0 0.85rem;
+  border-left: 3px solid var(--leaf);
+  font-size: calc(1.12rem * var(--scale));
+  line-height: 1.75;
+}
+.translation-te .te-tag {
+  display: block;
+  color: var(--leaf);
+  font-size: 0.85rem;
+}
 .notes, .closing { margin-top: 0.4rem; }
 .notes summary, .closing summary { cursor: pointer; color: var(--leaf); }
 .sarga-foot { border-top: 1px solid var(--rule); padding-top: 1rem; }
@@ -288,4 +321,5 @@ main { padding-bottom: 2rem; }
   .kanda-status, .sarga-pending span:last-child { grid-column: 2; }
   .gloss { grid-template-columns: 1fr; }
   .sloka { font-size: calc(1.45rem * var(--scale)); }
+  .sloka-te { font-size: calc(1.32rem * var(--scale)); }
 }
