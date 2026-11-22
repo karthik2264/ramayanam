@@ -30,43 +30,85 @@
           "itrans": "tataH",
           "iast": "tataḥ",
           "devanagari": "ततः",
+          "telugu": "తతః",
           "meaning": "then",
+          "meaningTe": "అప్పుడు",
           "anvayaIndex": 0,
           "verseIndex": 0
         },
         {
-          "itrans": "raamaH saumitriNaa saha",
-          "iast": "rāmaḥ saumitriṇā saha",
-          "devanagari": "रामः सौमित्रिणा सह",
-          "meaning": "Rama, Soumitri, along with",
+          "itrans": "praaguttaraam",
+          "iast": "prāguttarām",
+          "devanagari": "प्रागुत्तराम्",
+          "telugu": "ప్రాగుత్తరామ్",
+          "meaning": "to the north-east",
+          "meaningTe": "ఈశాన్య దిక్కుకు",
+          "anvayaIndex": 4,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "gatvaa",
+          "iast": "gatvā",
+          "devanagari": "गत्वा",
+          "telugu": "గత్వా",
+          "meaning": "going",
+          "meaningTe": "వెళ్ళి",
+          "anvayaIndex": 5,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "raamaH",
+          "iast": "rāmaḥ",
+          "devanagari": "रामः",
+          "telugu": "రామః",
+          "meaning": "Rāma",
+          "meaningTe": "రాముడు",
           "anvayaIndex": 1,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "saumitriNaa saha",
+          "iast": "saumitriṇā saha",
+          "devanagari": "सौमित्रिणा सह",
+          "telugu": "సౌమిత్రిణా సహ",
+          "meaning": "with Saumitri",
+          "meaningTe": "సుమిత్రాపుత్రుడితో కలిసి",
+          "anvayaIndex": 2,
           "verseIndex": 4
         },
         {
           "itrans": "vishvaamitram puraskR^itya",
           "iast": "viśvāmitram puraskṛtya",
-          "devanagari": "विश्वामित्रं पुरस्कृत्य",
-          "meaning": "Vishvamitra, keeping afore",
-          "anvayaIndex": 2,
-          "verseIndex": 7
-        },
-        {
-          "itrans": "praak uttaraam gatvaa",
-          "iast": "prāk uttarām gatvā",
-          "devanagari": "प्राक् उत्तरां गत्वा",
-          "meaning": ", to east, north, [direction,] on going",
+          "devanagari": "विश्वामित्रम् पुरस्कृत्य",
+          "telugu": "విశ్వామిత్రమ్ పురస్కృత్య",
+          "meaning": "placing Viśvāmitra in front",
+          "meaningTe": "విశ్వామిత్రుడిని ముందుంచుకుని",
           "anvayaIndex": 3,
-          "verseIndex": 1
+          "verseIndex": 5
         },
         {
-          "itrans": "yaj~na vaaTam upaagamat",
-          "iast": "yajña vāṭam upāgamat",
-          "devanagari": "यज्ञ वाटं उपागमत्",
-          "meaning": "[Janaka's,] Vedic-ritual, hall, neared.",
-          "anvayaIndex": 4,
-          "verseIndex": 10
+          "itrans": "yaj~navaaTam",
+          "iast": "yajñavāṭam",
+          "devanagari": "यज्ञवाटम्",
+          "telugu": "యజ్ఞవాటమ్",
+          "meaning": "the sacrificial enclosure",
+          "meaningTe": "యజ్ఞవాటికను",
+          "anvayaIndex": 6,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "upaagamat",
+          "iast": "upāgamat",
+          "devanagari": "उपागमत्",
+          "telugu": "ఉపాగమత్",
+          "meaning": "reached",
+          "meaningTe": "చేరాడు",
+          "anvayaIndex": 7,
+          "verseIndex": 7
         }
-      ]
+      ],
+      "telugu": "తతః ప్రాగుత్తరాం గత్వా రామః సౌమిత్రిణా సహ |\nవిశ్వామిత్రం పురస్కృత్య యజ్ఞవాటముపాగమత్",
+      "translationTe": "అప్పుడు రాముడు సుమిత్రాపుత్రుడితో కలిసి, విశ్వామిత్రుడిని ముందుంచుకుని, ఈశాన్య దిక్కుకు వెళ్ళి యజ్ఞవాటికను చేరాడు."
     },
     {
       "id": "1.50.2",
@@ -80,46 +122,98 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "saha lakSmaNaH raamaH tu",
-          "iast": "saha lakṣmaṇaḥ rāmaḥ tu",
-          "devanagari": "सह लक्ष्मणः रामः तु",
-          "meaning": "with, Lakshmana, Rama, on his part",
-          "anvayaIndex": 0,
-          "verseIndex": null
+          "itrans": "raamaH tu",
+          "iast": "rāmaḥ tu",
+          "devanagari": "रामः तु",
+          "telugu": "రామః తు",
+          "meaning": "Rāma",
+          "meaningTe": "రాముడు",
+          "anvayaIndex": 1,
+          "verseIndex": 0
         },
         {
-          "itrans": "muni shaarduulam uvaaca",
-          "iast": "muni śārdūlam uvāca",
-          "devanagari": "मुनि शार्दूलं उवाच",
-          "meaning": "to saint, tigerly - Vishvamitra, spoke",
-          "anvayaIndex": 1,
+          "itrans": "munishaarduulam",
+          "iast": "muniśārdūlam",
+          "devanagari": "मुनिशार्दूलम्",
+          "telugu": "మునిశార్దూలమ్",
+          "meaning": "to the tiger among sages",
+          "meaningTe": "మునిశ్రేష్ఠుడితో",
+          "anvayaIndex": 2,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "uvaacha",
+          "iast": "uvāca",
+          "devanagari": "उवाच",
+          "telugu": "ఉవాచ",
+          "meaning": "said",
+          "meaningTe": "అన్నాడు",
+          "anvayaIndex": 3,
           "verseIndex": 2
         },
         {
-          "itrans": "mahaa aatmanaH janakasya",
-          "iast": "mahā ātmanaḥ janakasya",
-          "devanagari": "महा आत्मनः जनकस्य",
-          "meaning": "of noble-souled, Janaka",
-          "anvayaIndex": 2,
-          "verseIndex": null
+          "itrans": "sahalakShmaNaH",
+          "iast": "sahalakṣmaṇaḥ",
+          "devanagari": "सहलक्ष्मणः",
+          "telugu": "సహలక్ష్మణః",
+          "meaning": "with Lakṣmaṇa",
+          "meaningTe": "లక్ష్మణుడితో కలిసిన",
+          "anvayaIndex": 0,
+          "verseIndex": 3
         },
         {
-          "itrans": "yaj~na samR^iddhiH",
-          "iast": "yajña samṛddhiḥ",
-          "devanagari": "यज्ञ समृद्धिः",
-          "meaning": "Vedic-ritual's, bountifulness",
-          "anvayaIndex": 3,
-          "verseIndex": 8
+          "itrans": "saadhvii",
+          "iast": "sādhvī",
+          "devanagari": "साध्वी",
+          "telugu": "సాధ్వీ",
+          "meaning": "excellent",
+          "meaningTe": "గొప్పగా ఉంది",
+          "anvayaIndex": 8,
+          "verseIndex": 4
         },
         {
-          "itrans": "saadhvii hi",
-          "iast": "sādhvī hi",
-          "devanagari": "साध्वी हि",
-          "meaning": "is excellent, indeed.",
-          "anvayaIndex": 4,
+          "itrans": "yaj~nasamR^iddhiH",
+          "iast": "yajñasamṛddhiḥ",
+          "devanagari": "यज्ञसमृद्धिः",
+          "telugu": "యజ్ఞసమృద్ధిః",
+          "meaning": "the splendour of the sacrifice",
+          "meaningTe": "యజ్ఞ వైభవం",
+          "anvayaIndex": 6,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "hi",
+          "iast": "hi",
+          "devanagari": "हि",
+          "telugu": "హి",
+          "meaning": "indeed",
+          "meaningTe": "నిజంగా",
+          "anvayaIndex": 7,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "janakasya",
+          "iast": "janakasya",
+          "devanagari": "जनकस्य",
+          "telugu": "జనకస్య",
+          "meaning": "of Janaka",
+          "meaningTe": "జనకుడి",
+          "anvayaIndex": 5,
           "verseIndex": 7
+        },
+        {
+          "itrans": "mahaatmanaH",
+          "iast": "mahātmanaḥ",
+          "devanagari": "महात्मनः",
+          "telugu": "మహాత్మనః",
+          "meaning": "great-souled",
+          "meaningTe": "మహాత్ముడైన",
+          "anvayaIndex": 4,
+          "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "రామస్తు మునిశార్దూలమువాచ సహలక్ష్మణః |\nసాధ్వీ యజ్ఞసమృద్ధిర్హి జనకస్య మహాత్మనః",
+      "translationTe": "లక్ష్మణుడితో కలిసిన రాముడు మునిశ్రేష్ఠుడితో అన్నాడు: \"మహాత్ముడైన జనకుడి యజ్ఞ వైభవం నిజంగా గొప్పగా ఉంది."
     },
     {
       "id": "1.50.3",
@@ -128,116 +222,174 @@
         3,
         4
       ],
-      "devanagari": "बहूनीह सहस्राणि नानादेशनिवासिनाम् |\nब्राह्मणानां महाभाग वेदाध्ययनशालिनाम्\nऋषि ऋषिवाटाश्च दृश्यन्ते शकटीशतसंकुलाः |\nदेशो विधीयतां ब्रह्मन् यत्र वत्स्यामहे वयम्",
-      "iast": "bahūni iha sahasrāṇi nānā deśa nivāsinām |\nbrāhmaṇānām mahābhāga veda adhyayana śālinām\nṛṣi vāṭāḥ ca dṛśyante śakaṭī śata saṅkulāḥ |\ndeśo vidhīyatām brahman yatra vatsyāmahe vayam",
+      "devanagari": "बहूनीह सहस्राणि नानादेशनिवासिनाम् |\nब्राह्मणानां महाभाग वेदाध्ययनशालिनाम्\nऋषिवाटाश्च दृश्यन्ते शकटीशतसंकुलाः |\nदेशो विधीयतां ब्रह्मन् यत्र वत्स्यामहे वयम्",
+      "iast": "bahūnīha sahasrāṇi nānādeśanivāsinām |\nbrāhmaṇānāṃ mahābhāga vedādhyayanaśālinām\nṛṣivāṭāśca dṛśyante śakaṭīśatasaṃkulāḥ |\ndeśo vidhīyatāṃ brahman yatra vatsyāmahe vayam",
       "translation": "\"Oh, highly fortunate sage, this place abounds with many thousands of Brahmans who are experts in Vedic practises and who seem to be the dwellers of numerous provinces, and also discernable are the cottages of sages rife with hundreds of carts full with their ceremonial chattels, as such oh, Brahman, a campsite may be decided for us too, as I discern every inch is inhabited.\" Thus Rama spoke to Vishvamitra.",
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaabhaaga",
-          "iast": "mahābhāga",
-          "devanagari": "महाभाग",
-          "meaning": "oh, highly fortunate one [Vishvamitra]",
-          "anvayaIndex": 0,
-          "verseIndex": 7
+          "itrans": "bahuuni",
+          "iast": "bahūni",
+          "devanagari": "बहूनि",
+          "telugu": "బహూని",
+          "meaning": "many",
+          "meaningTe": "వేల మంది",
+          "anvayaIndex": 4,
+          "verseIndex": 0
         },
         {
           "itrans": "iha",
           "iast": "iha",
           "devanagari": "इह",
-          "meaning": "here - this place",
+          "telugu": "ఇహ",
+          "meaning": "here",
+          "meaningTe": "ఇక్కడ",
           "anvayaIndex": 1,
           "verseIndex": 1
         },
         {
-          "itrans": "naanaa desha nivaasinaam",
-          "iast": "nānā deśa nivāsinām",
-          "devanagari": "नाना देश निवासिनां",
-          "meaning": "very many, in provinces, dwellers",
+          "itrans": "sahasraaNi",
+          "iast": "sahasrāṇi",
+          "devanagari": "सहस्राणि",
+          "telugu": "సహస్రాణి",
+          "meaning": "thousands",
+          "meaningTe": "వేలు",
+          "anvayaIndex": 5,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "naanaadeshanivaasinaam",
+          "iast": "nānādeśanivāsinām",
+          "devanagari": "नानादेशनिवासिनाम्",
+          "telugu": "నానాదేశనివాసినామ్",
+          "meaning": "dwelling in various lands",
+          "meaningTe": "అనేక దేశాల నుండి వచ్చిన",
           "anvayaIndex": 2,
           "verseIndex": 3
         },
         {
-          "itrans": "veda adhyayana shaalinaam",
-          "iast": "veda adhyayana śālinām",
-          "devanagari": "वेद अध्ययन शालिनां",
-          "meaning": "Veda, in practices, experts",
-          "anvayaIndex": 3,
-          "verseIndex": 8
-        },
-        {
           "itrans": "braahmaNaanaam",
           "iast": "brāhmaṇānām",
-          "devanagari": "ब्राह्मणानां",
-          "meaning": "of Brahmans",
-          "anvayaIndex": 4,
+          "devanagari": "ब्राह्मणानाम्",
+          "telugu": "బ్రాహ్మణానామ్",
+          "meaning": "of brahmins",
+          "meaningTe": "బ్రాహ్మణులున్నారు",
+          "anvayaIndex": 6,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "mahaabhaaga",
+          "iast": "mahābhāga",
+          "devanagari": "महाभाग",
+          "telugu": "మహాభాగ",
+          "meaning": "O illustrious one",
+          "meaningTe": "మహాభాగా",
+          "anvayaIndex": 0,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "vedaadhyayanashaalinaam",
+          "iast": "vedādhyayanaśālinām",
+          "devanagari": "वेदाध्ययनशालिनाम्",
+          "telugu": "వేదాధ్యయనశాలినామ్",
+          "meaning": "devoted to Vedic study",
+          "meaningTe": "వేదాధ్యయనంతో శోభిల్లే",
+          "anvayaIndex": 3,
           "verseIndex": 6
         },
         {
-          "itrans": "sahasraaNi bahuuni",
-          "iast": "sahasrāṇi bahūni",
-          "devanagari": "सहस्राणि बहूनि",
-          "meaning": "thousands, many",
-          "anvayaIndex": 5,
-          "verseIndex": 0
-        },
-        {
-          "itrans": "shakaTii shata sankulaaH",
-          "iast": "śakaṭī śata sankulāḥ",
-          "devanagari": "शकटी शत सन्कुलाः",
-          "meaning": "carts, hundreds, rife with",
-          "anvayaIndex": 6,
-          "verseIndex": 15
-        },
-        {
-          "itrans": "R^iSi vaaTaaH ca",
-          "iast": "ṛṣi vāṭāḥ ca",
-          "devanagari": "ऋषि वाटाः च",
-          "meaning": "sages', cottages, also",
-          "anvayaIndex": 7,
-          "verseIndex": 11
+          "itrans": "R^iShivaaTaaH cha",
+          "iast": "ṛṣivāṭāḥ ca",
+          "devanagari": "ऋषिवाटाः च",
+          "telugu": "ఋషివాటాః చ",
+          "meaning": "and the sages' enclosures",
+          "meaningTe": "ఋషుల విడిదులు",
+          "anvayaIndex": 8,
+          "verseIndex": 7
         },
         {
           "itrans": "dR^ishyante",
           "iast": "dṛśyante",
           "devanagari": "दृश्यन्ते",
-          "meaning": "are appearing",
-          "anvayaIndex": 8,
-          "verseIndex": 14
-        },
-        {
-          "itrans": "brahman",
-          "iast": "brahman",
-          "devanagari": "ब्रह्मन्",
-          "meaning": "oh, Brahman",
+          "telugu": "దృశ్యంతే",
+          "meaning": "are seen",
+          "meaningTe": "కనిపిస్తున్నాయి",
           "anvayaIndex": 9,
-          "verseIndex": 20
+          "verseIndex": 8
         },
         {
-          "itrans": "vayam yatra vatsyaamahe",
-          "iast": "vayam yatra vatsyāmahe",
-          "devanagari": "वयं यत्र वत्स्यामहे",
-          "meaning": "we, where, take lodge",
-          "anvayaIndex": 10,
-          "verseIndex": 21
+          "itrans": "shakaTiishatasa~NkulaaH",
+          "iast": "śakaṭīśatasaṅkulāḥ",
+          "devanagari": "शकटीशतसङ्कुलाः",
+          "telugu": "శకటీశతసంకులాః",
+          "meaning": "crowded with hundreds of carts",
+          "meaningTe": "వందల బండ్లతో నిండిన",
+          "anvayaIndex": 7,
+          "verseIndex": 9
         },
         {
           "itrans": "deshaH",
           "iast": "deśaḥ",
           "devanagari": "देशः",
-          "meaning": "place - campsite",
-          "anvayaIndex": 11,
-          "verseIndex": 18
+          "telugu": "దేశః",
+          "meaning": "a place",
+          "meaningTe": "చోటును",
+          "anvayaIndex": 14,
+          "verseIndex": 10
         },
         {
           "itrans": "vidhiiyataam",
           "iast": "vidhīyatām",
-          "devanagari": "विधीयतां",
-          "meaning": "let it be decided.",
+          "devanagari": "विधीयताम्",
+          "telugu": "విధీయతామ్",
+          "meaning": "let be decided",
+          "meaningTe": "నిర్ణయించండి",
+          "anvayaIndex": 15,
+          "verseIndex": 11
+        },
+        {
+          "itrans": "brahman",
+          "iast": "brahman",
+          "devanagari": "ब्रह्मन्",
+          "telugu": "బ్రహ్మన్",
+          "meaning": "O brahmin",
+          "meaningTe": "బ్రహ్మర్షీ",
+          "anvayaIndex": 10,
+          "verseIndex": 12
+        },
+        {
+          "itrans": "yatra",
+          "iast": "yatra",
+          "devanagari": "यत्र",
+          "telugu": "యత్ర",
+          "meaning": "where",
+          "meaningTe": "ఉండే",
           "anvayaIndex": 12,
-          "verseIndex": 19
+          "verseIndex": 13
+        },
+        {
+          "itrans": "vatsyaamahe",
+          "iast": "vatsyāmahe",
+          "devanagari": "वत्स्यामहे",
+          "telugu": "వత్స్యామహే",
+          "meaning": "shall stay",
+          "meaningTe": "ఉండే",
+          "anvayaIndex": 13,
+          "verseIndex": 14
+        },
+        {
+          "itrans": "vayam",
+          "iast": "vayam",
+          "devanagari": "वयम्",
+          "telugu": "వయమ్",
+          "meaning": "we",
+          "meaningTe": "మనం",
+          "anvayaIndex": 11,
+          "verseIndex": 15
         }
-      ]
+      ],
+      "telugu": "బహూనీహ సహస్రాణి నానాదేశనివాసినామ్ |\nబ్రాహ్మణానాం మహాభాగ వేదాధ్యయనశాలినామ్\nఋషివాటాశ్చ దృశ్యంతే శకటీశతసంకులాః |\nదేశో విధీయతాం బ్రహ్మన్ యత్ర వత్స్యామహే వయమ్",
+      "translationTe": "\"మహాభాగా! ఇక్కడ అనేక దేశాల నుండి వచ్చిన, వేదాధ్యయనంతో శోభిల్లే వేల మంది బ్రాహ్మణులున్నారు. వందల బండ్లతో నిండిన ఋషుల విడిదులు కనిపిస్తున్నాయి. బ్రహ్మర్షీ! మనం ఉండే చోటును నిర్ణయించండి.\""
     },
     {
       "id": "1.50.5",
@@ -251,46 +403,98 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaamuniH vishvaamitraH",
-          "iast": "mahāmuniḥ viśvāmitraḥ",
-          "devanagari": "महामुनिः विश्वामित्रः",
-          "meaning": "great-saint, Vishvamitra",
+          "itrans": "raamasya vachanam",
+          "iast": "rāmasya vacanam",
+          "devanagari": "रामस्य वचनम्",
+          "telugu": "రామస్య వచనమ్",
+          "meaning": "Rāma's words",
+          "meaningTe": "రాముడి మాట",
           "anvayaIndex": 0,
-          "verseIndex": 3
-        },
-        {
-          "itrans": "raamasya vacanam shrutvaa",
-          "iast": "rāmasya vacanam śrutvā",
-          "devanagari": "रामस्य वचनं श्रुत्वा",
-          "meaning": "Rama's, words, on hearing",
-          "anvayaIndex": 1,
           "verseIndex": 0
         },
         {
-          "itrans": "salila aayute",
-          "iast": "salila āyute",
-          "devanagari": "सलिल आयुते",
-          "meaning": "[refreshing] waters, having",
-          "anvayaIndex": 2,
-          "verseIndex": 9
+          "itrans": "shrutvaa",
+          "iast": "śrutvā",
+          "devanagari": "श्रुत्वा",
+          "telugu": "శ్రుత్వా",
+          "meaning": "hearing",
+          "meaningTe": "విని",
+          "anvayaIndex": 1,
+          "verseIndex": 1
         },
         {
-          "itrans": "vivikte deshe",
-          "iast": "vivikte deśe",
-          "devanagari": "विविक्ते देशे",
-          "meaning": "in an unfrequented, place",
+          "itrans": "vishvaamitraH",
+          "iast": "viśvāmitraḥ",
+          "devanagari": "विश्वामित्रः",
+          "telugu": "విశ్వామిత్రః",
+          "meaning": "Viśvāmitra",
+          "meaningTe": "విశ్వామిత్రుడు",
           "anvayaIndex": 3,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "mahaamuniH",
+          "iast": "mahāmuniḥ",
+          "devanagari": "महामुनिः",
+          "telugu": "మహామునిః",
+          "meaning": "the great sage",
+          "meaningTe": "మహాముని",
+          "anvayaIndex": 2,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "nivesham",
+          "iast": "niveśam",
+          "devanagari": "निवेशम्",
+          "telugu": "నివేశమ్",
+          "meaning": "camp",
+          "meaningTe": "విడిది",
+          "anvayaIndex": 7,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "akarot",
+          "iast": "akarot",
+          "devanagari": "अकरोत्",
+          "telugu": "అకరోత్",
+          "meaning": "made",
+          "meaningTe": "ఏర్పాటు చేశాడు",
+          "anvayaIndex": 8,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "deshe",
+          "iast": "deśe",
+          "devanagari": "देशे",
+          "telugu": "దేశే",
+          "meaning": "in a place",
+          "meaningTe": "చోట",
+          "anvayaIndex": 6,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "vivikte",
+          "iast": "vivikte",
+          "devanagari": "विविक्ते",
+          "telugu": "వివిక్తే",
+          "meaning": "secluded",
+          "meaningTe": "ఏకాంతమైన",
+          "anvayaIndex": 5,
           "verseIndex": 7
         },
         {
-          "itrans": "nivesham akarot",
-          "iast": "niveśam akarot",
-          "devanagari": "निवेशं अकरोत्",
-          "meaning": "camp, made [arranged]",
+          "itrans": "salilaayute",
+          "iast": "salilāyute",
+          "devanagari": "सलिलायुते",
+          "telugu": "సలిలాయుతే",
+          "meaning": "with water",
+          "meaningTe": "నీళ్ళు ఉన్న",
           "anvayaIndex": 4,
-          "verseIndex": 5
+          "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "రామస్య వచనం శ్రుత్వా విశ్వామిత్రో మహామునిః |\nనివేశమకరోద్దేశే వివిక్తే సలిలాయుతే",
+      "translationTe": "రాముడి మాట విని మహాముని విశ్వామిత్రుడు నీళ్ళు ఉన్న, ఏకాంతమైన చోట విడిది ఏర్పాటు చేశాడు."
     },
     {
       "id": "1.50.6",
@@ -304,86 +508,128 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "nR^ipa varaH",
-          "iast": "nṛpa varaḥ",
-          "devanagari": "नृप वरः",
-          "meaning": "king, the best - Janaka",
+          "itrans": "vishvaamitram",
+          "iast": "viśvāmitram",
+          "devanagari": "विश्वामित्रम्",
+          "telugu": "విశ్వామిత్రమ్",
+          "meaning": "Viśvāmitra",
+          "meaningTe": "విశ్వామిత్రుడు",
           "anvayaIndex": 0,
+          "verseIndex": 0
+        },
+        {
+          "itrans": "anupraaptam",
+          "iast": "anuprāptam",
+          "devanagari": "अनुप्राप्तम्",
+          "telugu": "అనుప్రాప్తమ్",
+          "meaning": "arrived",
+          "meaningTe": "వచ్చాడని",
+          "anvayaIndex": 1,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "shrutvaa",
+          "iast": "śrutvā",
+          "devanagari": "श्रुत्वा",
+          "telugu": "శ్రుత్వా",
+          "meaning": "hearing",
+          "meaningTe": "విని",
+          "anvayaIndex": 2,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "nR^ipavaraH",
+          "iast": "nṛpavaraḥ",
+          "devanagari": "नृपवरः",
+          "telugu": "నృపవరః",
+          "meaning": "the best of kings",
+          "meaningTe": "రాజశ్రేష్ఠుడైన జనకుడు",
+          "anvayaIndex": 3,
           "verseIndex": 3
         },
         {
           "itrans": "tadaa",
           "iast": "tadā",
           "devanagari": "तदा",
+          "telugu": "తదా",
           "meaning": "then",
-          "anvayaIndex": 1,
-          "verseIndex": 4
-        },
-        {
-          "itrans": "vishvaamitram anupraaptam shrutvaa",
-          "iast": "viśvāmitram anuprāptam śrutvā",
-          "devanagari": "विश्वामित्रं अनुप्राप्तं श्रुत्वा",
-          "meaning": "Vishvamitra's, one chanced [at Mithila,] on hearing",
-          "anvayaIndex": 2,
-          "verseIndex": 0
-        },
-        {
-          "itrans": "a ninditam",
-          "iast": "a ninditam",
-          "devanagari": "अ निन्दितं",
-          "meaning": "not, reprovable one",
-          "anvayaIndex": 3,
-          "verseIndex": 8
-        },
-        {
-          "itrans": "purohitam",
-          "iast": "purohitam",
-          "devanagari": "पुरोहितं",
-          "meaning": "priest",
+          "meaningTe": "అప్పుడు",
           "anvayaIndex": 4,
-          "verseIndex": 7
+          "verseIndex": 4
         },
         {
           "itrans": "shataanandam",
           "iast": "śatānandam",
-          "devanagari": "शतानन्दं",
-          "meaning": "Shataananda",
-          "anvayaIndex": 5,
+          "devanagari": "शतानन्दम्",
+          "telugu": "శతానందమ్",
+          "meaning": "Śatānanda",
+          "meaningTe": "శతానందుడిని",
+          "anvayaIndex": 7,
           "verseIndex": 5
         },
         {
           "itrans": "puraskR^itya",
           "iast": "puraskṛtya",
           "devanagari": "पुरस्कृत्य",
-          "meaning": "keeping afore",
-          "anvayaIndex": 6,
+          "telugu": "పురస్కృత్య",
+          "meaning": "placing in front",
+          "meaningTe": "ముందుంచుకుని",
+          "anvayaIndex": 8,
           "verseIndex": 6
         },
         {
-          "itrans": "vinayena samanvitaH",
-          "iast": "vinayena samanvitaḥ",
-          "devanagari": "विनयेन समन्वितः",
-          "meaning": "with deference, embodied with [in deference to Vishvamitra]",
-          "anvayaIndex": 7,
-          "verseIndex": 12
+          "itrans": "purohitam",
+          "iast": "purohitam",
+          "devanagari": "पुरोहितम्",
+          "telugu": "పురోహితమ్",
+          "meaning": "the family priest",
+          "meaningTe": "పురోహితుడు",
+          "anvayaIndex": 6,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "aninditam",
+          "iast": "aninditam",
+          "devanagari": "अनिन्दितम्",
+          "telugu": "అనిందితమ్",
+          "meaning": "blameless",
+          "meaningTe": "నిందలేని",
+          "anvayaIndex": 5,
+          "verseIndex": 8
+        },
+        {
+          "itrans": "pratyujjagaama",
+          "iast": "pratyujjagāma",
+          "devanagari": "प्रत्युज्जगाम",
+          "telugu": "ప్రత్యుజ్జగామ",
+          "meaning": "went forth to meet",
+          "meaningTe": "ఎదురేగాడు",
+          "anvayaIndex": 11,
+          "verseIndex": 9
         },
         {
           "itrans": "sahasaa",
           "iast": "sahasā",
           "devanagari": "सहसा",
-          "meaning": "instantly",
-          "anvayaIndex": 8,
-          "verseIndex": 11
+          "telugu": "సహసా",
+          "meaning": "at once",
+          "meaningTe": "వెంటనే",
+          "anvayaIndex": 10,
+          "verseIndex": 10
         },
         {
-          "itrans": "prati ut jagaama",
-          "iast": "prati ut jagāma",
-          "devanagari": "प्रति उत् जगाम",
-          "meaning": "towards [Vishvamitra,] forged ahead.",
+          "itrans": "vinayena samanvitaH",
+          "iast": "vinayena samanvitaḥ",
+          "devanagari": "विनयेन समन्वितः",
+          "telugu": "వినయేన సమన్వితః",
+          "meaning": "with humility",
+          "meaningTe": "వినయంగా",
           "anvayaIndex": 9,
-          "verseIndex": null
+          "verseIndex": 11
         }
-      ]
+      ],
+      "telugu": "విశ్వామిత్రమనుప్రాప్తం శ్రుత్వా నృపవరస్తదా |\nశతానందం పురస్కృత్య పురోహితమనిందితమ్\nప్రత్యుజ్జగామ సహసా వినయేన సమన్వితః |",
+      "translationTe": "విశ్వామిత్రుడు వచ్చాడని విని రాజశ్రేష్ఠుడైన జనకుడు అప్పుడు నిందలేని పురోహితుడు శతానందుడిని ముందుంచుకుని, వినయంగా వెంటనే ఎదురేగాడు."
     },
     {
       "id": "1.50.7",
@@ -397,54 +643,98 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaatmaanaH",
-          "iast": "mahātmānaḥ",
-          "devanagari": "महात्मानः",
-          "meaning": "of the great-souled one - Janaka's",
-          "anvayaIndex": 0,
-          "verseIndex": 2
-        },
-        {
           "itrans": "R^itvijaH api",
           "iast": "ṛtvijaḥ api",
           "devanagari": "ऋत्विजः अपि",
-          "meaning": "administrators of Vedic-ritual, even",
+          "telugu": "ఋత్విజః అపి",
+          "meaning": "the priests too",
+          "meaningTe": "ఋత్విక్కులు కూడా",
           "anvayaIndex": 1,
           "verseIndex": 0
         },
         {
-          "itrans": "sa tvaram",
-          "iast": "sa tvaram",
-          "devanagari": "स त्वरं",
-          "meaning": "with, haste",
-          "anvayaIndex": 2,
-          "verseIndex": 6
+          "itrans": "mahaatmaanaH",
+          "iast": "mahātmānaḥ",
+          "devanagari": "महात्मानः",
+          "telugu": "మహాత్మానః",
+          "meaning": "great-souled",
+          "meaningTe": "మహాత్ములైన",
+          "anvayaIndex": 0,
+          "verseIndex": 1
         },
         {
-          "itrans": "arghyam aadaaya",
-          "iast": "arghyam ādāya",
-          "devanagari": "अर्घ्यं आदाय",
-          "meaning": "water, on taking",
+          "itrans": "tu arghyam",
+          "iast": "tu arghyam",
+          "devanagari": "तु अर्घ्यम्",
+          "telugu": "తు అర్ఘ్యమ్",
+          "meaning": "arghya",
+          "meaningTe": "అర్ఘ్యం",
           "anvayaIndex": 3,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "aadaaya",
+          "iast": "ādāya",
+          "devanagari": "आदाय",
+          "telugu": "ఆదాయ",
+          "meaning": "taking",
+          "meaningTe": "తీసుకుని",
+          "anvayaIndex": 4,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "satvaram",
+          "iast": "satvaram",
+          "devanagari": "सत्वरम्",
+          "telugu": "సత్వరమ్",
+          "meaning": "quickly",
+          "meaningTe": "త్వరగా",
+          "anvayaIndex": 2,
           "verseIndex": 4
         },
         {
-          "itrans": "dharma puraskR^itam",
-          "iast": "dharma puraskṛtam",
-          "devanagari": "धर्म पुरस्कृतं",
-          "meaning": "ritual, [sanctified,] in view of [ritualistically]",
-          "anvayaIndex": 4,
-          "verseIndex": 11
+          "itrans": "vishvaamitraaya",
+          "iast": "viśvāmitrāya",
+          "devanagari": "विश्वामित्राय",
+          "telugu": "విశ్వామిత్రాయ",
+          "meaning": "to Viśvāmitra",
+          "meaningTe": "విశ్వామిత్రుడికి",
+          "anvayaIndex": 7,
+          "verseIndex": 5
         },
         {
-          "itrans": "dharmeNa vishvaamitraaya dadau",
-          "iast": "dharmeṇa viśvāmitrāya dadau",
-          "devanagari": "धर्मेण विश्वामित्राय ददौ",
-          "meaning": "ritually, to Vishvamitra, offered.",
+          "itrans": "dharmeNa",
+          "iast": "dharmeṇa",
+          "devanagari": "धर्मेण",
+          "telugu": "ధర్మేణ",
+          "meaning": "righteously",
+          "meaningTe": "ధర్మబద్ధంగా",
           "anvayaIndex": 5,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "dadau",
+          "iast": "dadau",
+          "devanagari": "ददौ",
+          "telugu": "దదౌ",
+          "meaning": "gave",
+          "meaningTe": "సమర్పించారు",
+          "anvayaIndex": 8,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "dharmapuraskR^itam",
+          "iast": "dharmapuraskṛtam",
+          "devanagari": "धर्मपुरस्कृतम्",
+          "telugu": "ధర్మపురస్కృతమ్",
+          "meaning": "in accordance with dharma",
+          "meaningTe": "ధర్మపూర్వకంగా",
+          "anvayaIndex": 6,
           "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "ఋత్విజోఽపి మహాత్మానస్త్వర్ఘ్యమాదాయ సత్వరమ్\nవిశ్వామిత్రాయ ధర్మేణ దదౌ ధర్మపురస్కృతమ్ |",
+      "translationTe": "మహాత్ములైన ఋత్విక్కులు కూడా త్వరగా అర్ఘ్యం తీసుకుని ధర్మబద్ధంగా ధర్మపూర్వకంగా విశ్వామిత్రుడికి సమర్పించారు."
     },
     {
       "id": "1.50.8",
@@ -458,46 +748,98 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaatmanaH janakasya",
-          "iast": "mahātmanaḥ janakasya",
-          "devanagari": "महात्मनः जनकस्य",
-          "meaning": "of great-souled one, Janaka's",
-          "anvayaIndex": 0,
-          "verseIndex": 4
-        },
-        {
-          "itrans": "taam puujaam pratigR^ihya",
-          "iast": "tām pūjām pratigṛhya",
-          "devanagari": "तां पूजां प्रतिगृह्य",
-          "meaning": "that, veneration, on receiving",
-          "anvayaIndex": 1,
+          "itrans": "pratigR^ihya tu",
+          "iast": "pratigṛhya tu",
+          "devanagari": "प्रतिगृह्य तु",
+          "telugu": "ప్రతిగృహ్య తు",
+          "meaning": "receiving",
+          "meaningTe": "స్వీకరించి",
+          "anvayaIndex": 3,
           "verseIndex": 0
         },
         {
-          "itrans": "raaj~naH kushalam",
-          "iast": "rājñaḥ kuśalam",
-          "devanagari": "राज्ञः कुशलं",
-          "meaning": "king's [Janaka's,] well-being",
+          "itrans": "taam puujaam",
+          "iast": "tām pūjām",
+          "devanagari": "ताम् पूजाम्",
+          "telugu": "తామ్ పూజామ్",
+          "meaning": "that honour",
+          "meaningTe": "ఆ పూజను",
           "anvayaIndex": 2,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "janakasya",
+          "iast": "janakasya",
+          "devanagari": "जनकस्य",
+          "telugu": "జనకస్య",
+          "meaning": "of Janaka",
+          "meaningTe": "జనకుడి",
+          "anvayaIndex": 1,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "mahaatmanaH",
+          "iast": "mahātmanaḥ",
+          "devanagari": "महात्मनः",
+          "telugu": "మహాత్మనః",
+          "meaning": "great-souled",
+          "meaningTe": "మహాత్ముడైన",
+          "anvayaIndex": 0,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "paprachCha",
+          "iast": "papraccha",
+          "devanagari": "पप्रच्छ",
+          "telugu": "పప్రచ్ఛ",
+          "meaning": "asked",
+          "meaningTe": "అడిగాడు",
+          "anvayaIndex": 8,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "kushalam",
+          "iast": "kuśalam",
+          "devanagari": "कुशलम्",
+          "telugu": "కుశలమ్",
+          "meaning": "welfare",
+          "meaningTe": "క్షేమాన్నీ",
+          "anvayaIndex": 5,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "raaj~naH",
+          "iast": "rājñaḥ",
+          "devanagari": "राज्ञः",
+          "telugu": "రాజ్ఞః",
+          "meaning": "of the king",
+          "meaningTe": "రాజు",
+          "anvayaIndex": 4,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "yaj~nasya cha",
+          "iast": "yajñasya ca",
+          "devanagari": "यज्ञस्य च",
+          "telugu": "యజ్ఞస్య చ",
+          "meaning": "and of the sacrifice",
+          "meaningTe": "యజ్ఞం",
+          "anvayaIndex": 6,
           "verseIndex": 7
         },
         {
-          "itrans": "yaj~nasya nir aamayam ca",
-          "iast": "yajñasya nir āmayam ca",
-          "devanagari": "यज्ञस्य निर् आमयं च",
-          "meaning": "of Vedic-ritual, without, hindrance [unhindered proceedings,] also",
-          "anvayaIndex": 3,
-          "verseIndex": null
-        },
-        {
-          "itrans": "papracCha",
-          "iast": "papraccha",
-          "devanagari": "पप्रच्छ",
-          "meaning": "asked after.",
-          "anvayaIndex": 4,
-          "verseIndex": 6
+          "itrans": "niraamayam",
+          "iast": "nirāmayam",
+          "devanagari": "निरामयम्",
+          "telugu": "నిరామయమ్",
+          "meaning": "unimpeded progress",
+          "meaningTe": "నిర్విఘ్నంగా జరుగుతోందా అనీ",
+          "anvayaIndex": 7,
+          "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "ప్రతిగృహ్య తు తాం పూజాం జనకస్య మహాత్మనః\nపప్రచ్ఛ కుశలం రాజ్ఞో యజ్ఞస్య చ నిరామయమ్ |",
+      "translationTe": "మహాత్ముడైన జనకుడి ఆ పూజను స్వీకరించి (విశ్వామిత్రుడు) రాజు క్షేమాన్నీ, యజ్ఞం నిర్విఘ్నంగా జరుగుతోందా అనీ అడిగాడు."
     },
     {
       "id": "1.50.9",
@@ -514,59 +856,85 @@
           "itrans": "saH",
           "iast": "saḥ",
           "devanagari": "सः",
-          "meaning": "he - Vishvamitra",
+          "telugu": "సః",
+          "meaning": "he",
+          "meaningTe": "ఆయన",
           "anvayaIndex": 0,
           "verseIndex": 0
         },
         {
-          "itrans": "sa upaadhyaaya purodhasaH taam muniin",
-          "iast": "sa upādhyāya purodhasaḥ tām munīn",
-          "devanagari": "स उपाध्याय पुरोधसः तां मुनीन्",
-          "meaning": "with, mentors, clerics, those, saints",
+          "itrans": "taan cha atha muniin",
+          "iast": "tān ca atha munīn",
+          "devanagari": "तान् च अथ मुनीन्",
+          "telugu": "తాన్ చ అథ మునీన్",
+          "meaning": "and then those sages",
+          "meaningTe": "ఆ మునులనూ",
           "anvayaIndex": 1,
-          "verseIndex": null
+          "verseIndex": 1
         },
         {
-          "itrans": "yathaa arham",
-          "iast": "yathā arham",
-          "devanagari": "यथा अर्हं",
-          "meaning": "= as, befitting",
-          "anvayaIndex": 2,
-          "verseIndex": 9
-        },
-        {
-          "itrans": "pR^iSTvaa",
+          "itrans": "pR^iShTvaa",
           "iast": "pṛṣṭvā",
           "devanagari": "पृष्ट्वा",
-          "meaning": "[well-being] on asking after",
-          "anvayaIndex": 3,
-          "verseIndex": 5
+          "telugu": "పృష్ట్వా",
+          "meaning": "asking",
+          "meaningTe": "క్షేమం అడిగి",
+          "anvayaIndex": 4,
+          "verseIndex": 2
         },
         {
-          "itrans": "atha",
-          "iast": "atha",
-          "devanagari": "अथ",
-          "meaning": "then",
-          "anvayaIndex": 4,
+          "itrans": "sopaadhyaayapurodhasaH",
+          "iast": "sopādhyāyapurodhasaḥ",
+          "devanagari": "सोपाध्यायपुरोधसः",
+          "telugu": "సోపాధ్యాయపురోధసః",
+          "meaning": "with preceptors and priests",
+          "meaningTe": "ఉపాధ్యాయులనూ, పురోహితులనూ",
+          "anvayaIndex": 2,
           "verseIndex": 3
         },
         {
-          "itrans": "prahR^iSTavat",
-          "iast": "prahṛṣṭavat",
-          "devanagari": "प्रहृष्टवत्",
-          "meaning": "as a happy-soul",
-          "anvayaIndex": 5,
-          "verseIndex": 14
+          "itrans": "yathaarham",
+          "iast": "yathārham",
+          "devanagari": "यथार्हम्",
+          "telugu": "యథార్హమ్",
+          "meaning": "as befitting",
+          "meaningTe": "యోగ్యత ప్రకారం",
+          "anvayaIndex": 3,
+          "verseIndex": 4
         },
         {
-          "itrans": "sarvaiH R^iSibhiH samaagacChat",
-          "iast": "sarvaiḥ ṛṣibhiḥ samāgacchat",
-          "devanagari": "सर्वैः ऋषिभिः समागच्छत्",
-          "meaning": "with all, sages, joined them.",
+          "itrans": "R^iShibhiH sarvaiH",
+          "iast": "ṛṣibhiḥ sarvaiḥ",
+          "devanagari": "ऋषिभिः सर्वैः",
+          "telugu": "ఋషిభిః సర్వైః",
+          "meaning": "with all the sages",
+          "meaningTe": "ఋషులందరితో",
+          "anvayaIndex": 5,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "samaagachChat",
+          "iast": "samāgacchat",
+          "devanagari": "समागच्छत्",
+          "telugu": "సమాగచ్ఛత్",
+          "meaning": "met",
+          "meaningTe": "కలిశాడు",
+          "anvayaIndex": 7,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "prahR^iShTavat",
+          "iast": "prahṛṣṭavat",
+          "devanagari": "प्रहृष्टवत्",
+          "telugu": "ప్రహృష్టవత్",
+          "meaning": "joyfully",
+          "meaningTe": "సంతోషంగా",
           "anvayaIndex": 6,
-          "verseIndex": 11
+          "verseIndex": 7
         }
-      ]
+      ],
+      "telugu": "స తాంశ్చాథ మునీన్ పృష్ట్వా సోపాధ్యాయపురోధసః\nయథార్హమృషిభిః సర్వైః సమాగచ్ఛత్ ప్రహృష్టవత్ |",
+      "translationTe": "ఆ తర్వాత ఆ మునులనూ, ఉపాధ్యాయులనూ, పురోహితులనూ యోగ్యత ప్రకారం క్షేమం అడిగి, ఋషులందరితో సంతోషంగా కలిశాడు."
     },
     {
       "id": "1.50.10",
@@ -583,51 +951,95 @@
           "itrans": "atha",
           "iast": "atha",
           "devanagari": "अथ",
+          "telugu": "అథ",
           "meaning": "then",
+          "meaningTe": "అప్పుడు",
           "anvayaIndex": 0,
           "verseIndex": 0
         },
         {
-          "itrans": "raajaa kR^ita anjaliH",
-          "iast": "rājā kṛta anjaliḥ",
-          "devanagari": "राजा कृत अन्जलिः",
-          "meaning": "king, with palm-fold",
+          "itrans": "raajaa",
+          "iast": "rājā",
+          "devanagari": "राजा",
+          "telugu": "రాజా",
+          "meaning": "the king",
+          "meaningTe": "రాజు",
           "anvayaIndex": 1,
           "verseIndex": 1
         },
         {
-          "itrans": "muni shreSTham abhaaSata",
-          "iast": "muni śreṣṭham abhāṣata",
-          "devanagari": "मुनि श्रेष्ठं अभाषत",
-          "meaning": "to eminent-sage Vishvamitra, spoke",
-          "anvayaIndex": 2,
+          "itrans": "munishreShTham",
+          "iast": "muniśreṣṭham",
+          "devanagari": "मुनिश्रेष्ठम्",
+          "telugu": "మునిశ్రేష్ఠమ్",
+          "meaning": "to the best of sages",
+          "meaningTe": "మునిశ్రేష్ఠుడితో",
+          "anvayaIndex": 3,
           "verseIndex": 2
+        },
+        {
+          "itrans": "kR^itaa~njaliH",
+          "iast": "kṛtāñjaliḥ",
+          "devanagari": "कृताञ्जलिः",
+          "telugu": "కృతాంజలిః",
+          "meaning": "with joined palms",
+          "meaningTe": "చేతులు జోడించి",
+          "anvayaIndex": 2,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "abhaaShata",
+          "iast": "abhāṣata",
+          "devanagari": "अभाषत",
+          "telugu": "అభాషత",
+          "meaning": "said",
+          "meaningTe": "అన్నాడు",
+          "anvayaIndex": 4,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "aasane",
+          "iast": "āsane",
+          "devanagari": "आसने",
+          "telugu": "ఆసనే",
+          "meaning": "on the seat",
+          "meaningTe": "ఆసనం మీద",
+          "anvayaIndex": 7,
+          "verseIndex": 5
         },
         {
           "itrans": "bhagavaan",
           "iast": "bhagavān",
           "devanagari": "भगवान्",
-          "meaning": "oh, reverend sage - Vishvamitra",
-          "anvayaIndex": 3,
-          "verseIndex": 8
-        },
-        {
-          "itrans": "ebhiH muni sattamaiH saha",
-          "iast": "ebhiḥ muni sattamaiḥ saha",
-          "devanagari": "एभिः मुनि सत्तमैः सह",
-          "meaning": "these, saint, eminent ones, along with",
-          "anvayaIndex": 4,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "aasane aastaam",
-          "iast": "āsane āstām",
-          "devanagari": "आसने आस्तां",
-          "meaning": "in seat, be seated - please be seated on a high seat.",
+          "telugu": "భగవాన్",
+          "meaning": "the lord",
+          "meaningTe": "భగవాన్",
           "anvayaIndex": 5,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "aastaam",
+          "iast": "āstām",
+          "devanagari": "आस्ताम्",
+          "telugu": "ఆస్తామ్",
+          "meaning": "may sit",
+          "meaningTe": "కూర్చోండి",
+          "anvayaIndex": 8,
           "verseIndex": 7
+        },
+        {
+          "itrans": "saha ebhiH munisattamaiH",
+          "iast": "saha ebhiḥ munisattamaiḥ",
+          "devanagari": "सह एभिः मुनिसत्तमैः",
+          "telugu": "సహ ఏభిః మునిసత్తమైః",
+          "meaning": "with these best of sages",
+          "meaningTe": "ఈ మునిశ్రేష్ఠులతో కలిసి",
+          "anvayaIndex": 6,
+          "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "అథ రాజా మునిశ్రేష్ఠం కృతాంజలిరభాషత\nఆసనే భగవానాస్తాం సహైభిర్మునిసత్తమైః |",
+      "translationTe": "అప్పుడు రాజు చేతులు జోడించి మునిశ్రేష్ఠుడితో అన్నాడు: \"భగవాన్! ఈ మునిశ్రేష్ఠులతో కలిసి ఆసనం మీద కూర్చోండి.\""
     },
     {
       "id": "1.50.11",
@@ -641,54 +1053,88 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "janakasya vacaH shrutvaa",
-          "iast": "janakasya vacaḥ śrutvā",
-          "devanagari": "जनकस्य वचः श्रुत्वा",
-          "meaning": "Janaka's, words, on hearing",
+          "itrans": "janakasya vachaH",
+          "iast": "janakasya vacaḥ",
+          "devanagari": "जनकस्य वचः",
+          "telugu": "జనకస్య వచః",
+          "meaning": "Janaka's words",
+          "meaningTe": "జనకుడి మాట",
           "anvayaIndex": 0,
           "verseIndex": 0
+        },
+        {
+          "itrans": "shrutvaa",
+          "iast": "śrutvā",
+          "devanagari": "श्रुत्वा",
+          "telugu": "శ్రుత్వా",
+          "meaning": "hearing",
+          "meaningTe": "విని",
+          "anvayaIndex": 1,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "niShasaada",
+          "iast": "niṣasāda",
+          "devanagari": "निषसाद",
+          "telugu": "నిషసాద",
+          "meaning": "sat",
+          "meaningTe": "కూర్చున్నాడు",
+          "anvayaIndex": 3,
+          "verseIndex": 2
         },
         {
           "itrans": "mahaamuniH",
           "iast": "mahāmuniḥ",
           "devanagari": "महामुनिः",
-          "meaning": "great-sage Vishvamitra",
-          "anvayaIndex": 1,
-          "verseIndex": 4
-        },
-        {
-          "itrans": "niSasaada",
-          "iast": "niṣasāda",
-          "devanagari": "निषसाद",
-          "meaning": "sat down [took his seat]",
+          "telugu": "మహామునిః",
+          "meaning": "the great sage",
+          "meaningTe": "మహాముని",
           "anvayaIndex": 2,
           "verseIndex": 3
         },
         {
-          "itrans": "purodhaa R^itvijaH caiva",
-          "iast": "purodhā ṛtvijaḥ caiva",
-          "devanagari": "पुरोधा ऋत्विजः चैव",
-          "meaning": "[royal] priest Shataananda, administers of Vedic-ritual, Ritvik-s, also thus",
-          "anvayaIndex": 3,
+          "itrans": "purodhaaH",
+          "iast": "purodhāḥ",
+          "devanagari": "पुरोधाः",
+          "telugu": "పురోధాః",
+          "meaning": "the priest",
+          "meaningTe": "పురోహితుడు",
+          "anvayaIndex": 4,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "R^itvijaH cha eva",
+          "iast": "ṛtvijaḥ ca eva",
+          "devanagari": "ऋत्विजः च एव",
+          "telugu": "ఋత్విజః చ ఏవ",
+          "meaning": "and the officiants",
+          "meaningTe": "ఋత్విక్కులు",
+          "anvayaIndex": 5,
           "verseIndex": 5
         },
         {
-          "itrans": "mantribhiH saha",
-          "iast": "mantribhiḥ saha",
-          "devanagari": "मन्त्रिभिः सह",
-          "meaning": "ministers, along with",
-          "anvayaIndex": 4,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "raajaa ca",
+          "itrans": "raajaa cha",
           "iast": "rājā ca",
           "devanagari": "राजा च",
-          "meaning": "king, also - took seat.",
-          "anvayaIndex": 5,
-          "verseIndex": 8
+          "telugu": "రాజా చ",
+          "meaning": "and the king",
+          "meaningTe": "రాజు కూడా కూర్చున్నారు",
+          "anvayaIndex": 7,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "saha mantribhiH",
+          "iast": "saha mantribhiḥ",
+          "devanagari": "सह मन्त्रिभिः",
+          "telugu": "సహ మంత్రిభిః",
+          "meaning": "with the ministers",
+          "meaningTe": "మంత్రులతో కలిసి",
+          "anvayaIndex": 6,
+          "verseIndex": 7
         }
-      ]
+      ],
+      "telugu": "జనకస్య వచః శ్రుత్వా నిషసాద మహామునిః\nపురోధా ఋత్విజశ్చైవ రాజా చ సహ మంత్రిభిః |",
+      "translationTe": "జనకుడి మాట విని మహాముని కూర్చున్నాడు; పురోహితుడు, ఋత్విక్కులు, మంత్రులతో కలిసి రాజు కూడా కూర్చున్నారు."
     },
     {
       "id": "1.50.12",
@@ -702,70 +1148,98 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "atha",
-          "iast": "atha",
-          "devanagari": "अथ",
-          "meaning": "then",
-          "anvayaIndex": 0,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "saH nR^ipatiH",
-          "iast": "saḥ nṛpatiḥ",
-          "devanagari": "सः नृपतिः",
-          "meaning": "he, the king [Janaka]",
+          "itrans": "aasaneShu",
+          "iast": "āsaneṣu",
+          "devanagari": "आसनेषु",
+          "telugu": "ఆసనేషు",
+          "meaning": "on seats",
+          "meaningTe": "ఆసనాలపై",
           "anvayaIndex": 1,
-          "verseIndex": 6
+          "verseIndex": 0
         },
         {
-          "itrans": "tatra",
-          "iast": "tatra",
-          "devanagari": "तत्र",
-          "meaning": "there",
+          "itrans": "yathaanyaayam",
+          "iast": "yathānyāyam",
+          "devanagari": "यथान्यायम्",
+          "telugu": "యథాన్యాయమ్",
+          "meaning": "properly",
+          "meaningTe": "నియమం ప్రకారం",
           "anvayaIndex": 2,
-          "verseIndex": 8
+          "verseIndex": 1
+        },
+        {
+          "itrans": "upaviShTaan",
+          "iast": "upaviṣṭān",
+          "devanagari": "उपविष्टान्",
+          "telugu": "ఉపవిష్టాన్",
+          "meaning": "seated",
+          "meaningTe": "కూర్చోవడం",
+          "anvayaIndex": 3,
+          "verseIndex": 2
         },
         {
           "itrans": "samantataH",
           "iast": "samantataḥ",
           "devanagari": "समन्ततः",
-          "meaning": "all about",
-          "anvayaIndex": 3,
+          "telugu": "సమంతతః",
+          "meaning": "all around",
+          "meaningTe": "చుట్టూ",
+          "anvayaIndex": 0,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "dR^iShTvaa",
+          "iast": "dṛṣṭvā",
+          "devanagari": "दृष्ट्वा",
+          "telugu": "దృష్ట్వా",
+          "meaning": "seeing",
+          "meaningTe": "చూసి",
+          "anvayaIndex": 4,
           "verseIndex": 4
         },
         {
-          "itrans": "yathaa nyaayam",
-          "iast": "yathā nyāyam",
-          "devanagari": "यथा न्यायं",
-          "meaning": "according, to procedure [procedurally]",
-          "anvayaIndex": 4,
-          "verseIndex": 1
-        },
-        {
-          "itrans": "aasaneSu upaviSTaan",
-          "iast": "āsaneṣu upaviṣṭān",
-          "devanagari": "आसनेषु उपविष्टान्",
-          "meaning": "in seats, who are sitting",
+          "itrans": "saH nR^ipatiH",
+          "iast": "saḥ nṛpatiḥ",
+          "devanagari": "सः नृपतिः",
+          "telugu": "సః నృపతిః",
+          "meaning": "that king",
+          "meaningTe": "ఆ రాజు",
           "anvayaIndex": 5,
-          "verseIndex": 0
-        },
-        {
-          "itrans": "dR^iSTvaa",
-          "iast": "dṛṣṭvā",
-          "devanagari": "दृष्ट्वा",
-          "meaning": "on beholding",
-          "anvayaIndex": 6,
           "verseIndex": 5
         },
         {
-          "itrans": "vishvaamitram abraviit",
-          "iast": "viśvāmitram abravīt",
-          "devanagari": "विश्वामित्रं अब्रवीत्",
-          "meaning": "to Vishvamitra, spoke to.",
+          "itrans": "tatra",
+          "iast": "tatra",
+          "devanagari": "तत्र",
+          "telugu": "తత్ర",
+          "meaning": "there",
+          "meaningTe": "అక్కడ",
+          "anvayaIndex": 6,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "vishvaamitram",
+          "iast": "viśvāmitram",
+          "devanagari": "विश्वामित्रम्",
+          "telugu": "విశ్వామిత్రమ్",
+          "meaning": "to Viśvāmitra",
+          "meaningTe": "విశ్వామిత్రుడితో",
           "anvayaIndex": 7,
-          "verseIndex": 9
+          "verseIndex": 7
+        },
+        {
+          "itrans": "atha abraviit",
+          "iast": "atha abravīt",
+          "devanagari": "अथ अब्रवीत्",
+          "telugu": "అథ అబ్రవీత్",
+          "meaning": "then said",
+          "meaningTe": "అన్నాడు",
+          "anvayaIndex": 8,
+          "verseIndex": 8
         }
-      ]
+      ],
+      "telugu": "ఆసనేషు యథాన్యాయముపవిష్టాన్ సమంతతః\nదృష్ట్వా స నృపతిస్తత్ర విశ్వామిత్రమథాబ్రవీత్ |",
+      "translationTe": "అందరూ చుట్టూ ఆసనాలపై నియమం ప్రకారం కూర్చోవడం చూసి, ఆ రాజు అక్కడ విశ్వామిత్రుడితో అన్నాడు."
     },
     {
       "id": "1.50.13",
@@ -782,59 +1256,105 @@
           "itrans": "adya",
           "iast": "adya",
           "devanagari": "अद्य",
+          "telugu": "అద్య",
           "meaning": "today",
+          "meaningTe": "ఈ రోజు",
           "anvayaIndex": 0,
           "verseIndex": 0
         },
         {
-          "itrans": "me yaj~na samR^iddhiH",
-          "iast": "me yajña samṛddhiḥ",
-          "devanagari": "मे यज्ञ समृद्धिः",
-          "meaning": "my, Vedic-ritual, is enriched",
-          "anvayaIndex": 1,
+          "itrans": "yaj~nasamR^iddhiH me",
+          "iast": "yajñasamṛddhiḥ me",
+          "devanagari": "यज्ञसमृद्धिः मे",
+          "telugu": "యజ్ఞసమృద్ధిః మే",
+          "meaning": "my sacrificial wealth",
+          "meaningTe": "నా యజ్ఞ సంపదను",
+          "anvayaIndex": 2,
           "verseIndex": 1
         },
         {
-          "itrans": "sa phalaa",
-          "iast": "sa phalā",
-          "devanagari": "स फला",
-          "meaning": "with, fruit - as a fructified one",
-          "anvayaIndex": 2,
-          "verseIndex": 4
+          "itrans": "saphalaa",
+          "iast": "saphalā",
+          "devanagari": "सफला",
+          "telugu": "సఫలా",
+          "meaning": "fruitful",
+          "meaningTe": "సఫలం",
+          "anvayaIndex": 3,
+          "verseIndex": 2
         },
         {
-          "itrans": "daivataiH kR^itaa",
-          "iast": "daivataiḥ kṛtā",
-          "devanagari": "दैवतैः कृता",
-          "meaning": "by gods, effectuated - gods fructified the ritual",
-          "anvayaIndex": 3,
-          "verseIndex": 5
+          "itrans": "daivataiH",
+          "iast": "daivataiḥ",
+          "devanagari": "दैवतैः",
+          "telugu": "దైవతైః",
+          "meaning": "by the gods",
+          "meaningTe": "దేవతలు",
+          "anvayaIndex": 1,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "kR^itaa",
+          "iast": "kṛtā",
+          "devanagari": "कृता",
+          "telugu": "కృతా",
+          "meaning": "made",
+          "meaningTe": "చేశారు",
+          "anvayaIndex": 4,
+          "verseIndex": 4
         },
         {
           "itrans": "adya",
           "iast": "adya",
           "devanagari": "अद्य",
+          "telugu": "అద్య",
           "meaning": "today",
-          "anvayaIndex": 4,
+          "meaningTe": "ఈ రోజు",
+          "anvayaIndex": 5,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "yaj~naphalam",
+          "iast": "yajñaphalam",
+          "devanagari": "यज्ञफलम्",
+          "telugu": "యజ్ఞఫలమ్",
+          "meaning": "the fruit of the sacrifice",
+          "meaningTe": "యజ్ఞఫలాన్ని",
+          "anvayaIndex": 8,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "praaptam",
+          "iast": "prāptam",
+          "devanagari": "प्राप्तम्",
+          "telugu": "ప్రాప్తమ్",
+          "meaning": "obtained",
+          "meaningTe": "పొందాను",
+          "anvayaIndex": 9,
           "verseIndex": 7
         },
         {
-          "itrans": "bhagavat darshanaat",
-          "iast": "bhagavat darśanāt",
-          "devanagari": "भगवत् दर्शनात्",
-          "meaning": "at god [godlike you,] on viewing",
-          "anvayaIndex": 5,
-          "verseIndex": 11
-        },
-        {
-          "itrans": "mayaa yaj~na phalam praaptam",
-          "iast": "mayā yajña phalam prāptam",
-          "devanagari": "मया यज्ञ फलं प्राप्तं",
-          "meaning": "by me, fruit [outcome,] of Vedic-ritual, [deemed to have been] obtained.",
+          "itrans": "bhagavaddarshanaat",
+          "iast": "bhagavaddarśanāt",
+          "devanagari": "भगवद्दर्शनात्",
+          "telugu": "భగవద్దర్శనాత్",
+          "meaning": "by seeing you",
+          "meaningTe": "మీ దర్శనంతో",
           "anvayaIndex": 6,
           "verseIndex": 8
+        },
+        {
+          "itrans": "mayaa",
+          "iast": "mayā",
+          "devanagari": "मया",
+          "telugu": "మయా",
+          "meaning": "by me",
+          "meaningTe": "నేను",
+          "anvayaIndex": 7,
+          "verseIndex": 9
         }
-      ]
+      ],
+      "telugu": "అద్య యజ్ఞసమృద్ధిర్మే సఫలా దైవతైః కృతా\nఅద్య యజ్ఞఫలం ప్రాప్తం భగవద్దర్శనాన్మయా |",
+      "translationTe": "\"ఈ రోజు దేవతలు నా యజ్ఞ సంపదను సఫలం చేశారు. ఈ రోజు మీ దర్శనంతో నేను యజ్ఞఫలాన్ని పొందాను."
     },
     {
       "id": "1.50.14",
@@ -848,62 +1368,88 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "muni pungava",
-          "iast": "muni pungava",
-          "devanagari": "मुनि पुन्गव",
-          "meaning": "oh, sage, eminent",
-          "anvayaIndex": 0,
-          "verseIndex": 6
+          "itrans": "dhanyaH asmi",
+          "iast": "dhanyaḥ asmi",
+          "devanagari": "धन्यः अस्मि",
+          "telugu": "ధన్యః అస్మి",
+          "meaning": "I am blessed",
+          "meaningTe": "నేను ధన్యుడిని",
+          "anvayaIndex": 6,
+          "verseIndex": 0
         },
         {
-          "itrans": "brahman",
-          "iast": "brahman",
-          "devanagari": "ब्रह्मन्",
-          "meaning": "oh, Brahman",
-          "anvayaIndex": 1,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "munibhiH saha",
-          "iast": "munibhiḥ saha",
-          "devanagari": "मुनिभिः सह",
-          "meaning": "[so many] sages, along with",
-          "anvayaIndex": 2,
-          "verseIndex": 13
+          "itrans": "anugR^ihiitaH asmi",
+          "iast": "anugṛhītaḥ asmi",
+          "devanagari": "अनुगृहीतः अस्मि",
+          "telugu": "అనుగృహీతః అస్మి",
+          "meaning": "I am favoured",
+          "meaningTe": "అనుగ్రహం పొందినవాడిని",
+          "anvayaIndex": 7,
+          "verseIndex": 1
         },
         {
           "itrans": "yasya me",
           "iast": "yasya me",
           "devanagari": "यस्य मे",
-          "meaning": "to which [ritual hall,] mine",
+          "telugu": "యస్య మే",
+          "meaning": "(to) whose (my)",
+          "meaningTe": "నా",
           "anvayaIndex": 3,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "munipu~Ngava",
+          "iast": "munipuṅgava",
+          "devanagari": "मुनिपुङ्गव",
+          "telugu": "మునిపుంగవ",
+          "meaning": "O best of sages",
+          "meaningTe": "మునిశ్రేష్ఠా",
+          "anvayaIndex": 0,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "yaj~nopasadanam",
+          "iast": "yajñopasadanam",
+          "devanagari": "यज्ञोपसदनम्",
+          "telugu": "యజ్ఞోపసదనమ్",
+          "meaning": "the sacrificial hall",
+          "meaningTe": "యజ్ఞశాలకు",
+          "anvayaIndex": 4,
           "verseIndex": 4
         },
         {
-          "itrans": "yaj~na upasadanam",
-          "iast": "yajña upasadanam",
-          "devanagari": "यज्ञ उपसदनं",
-          "meaning": "to Vedic-ritual, hall",
-          "anvayaIndex": 4,
-          "verseIndex": 8
+          "itrans": "brahman",
+          "iast": "brahman",
+          "devanagari": "ब्रह्मन्",
+          "telugu": "బ్రహ్మన్",
+          "meaning": "O brahmin",
+          "meaningTe": "బ్రహ్మర్షీ",
+          "anvayaIndex": 1,
+          "verseIndex": 5
         },
         {
           "itrans": "praaptaH asi",
           "iast": "prāptaḥ asi",
           "devanagari": "प्राप्तः असि",
-          "meaning": "arrived, you have",
+          "telugu": "ప్రాప్తః అసి",
+          "meaning": "you have come",
+          "meaningTe": "మీరు వచ్చారు",
           "anvayaIndex": 5,
-          "verseIndex": 11
+          "verseIndex": 6
         },
         {
-          "itrans": "dhanyaH asmi anugR^ihiitaH asmi",
-          "iast": "dhanyaḥ asmi anugṛhītaḥ asmi",
-          "devanagari": "धन्यः अस्मि अनुगृहीतः अस्मि",
-          "meaning": "honoured, I am, hallowed, I am.",
-          "anvayaIndex": 6,
-          "verseIndex": 0
+          "itrans": "munibhiH saha",
+          "iast": "munibhiḥ saha",
+          "devanagari": "मुनिभिः सह",
+          "telugu": "మునిభిః సహ",
+          "meaning": "with the sages",
+          "meaningTe": "మునులతో కలిసి",
+          "anvayaIndex": 2,
+          "verseIndex": 7
         }
-      ]
+      ],
+      "telugu": "ధన్యోఽస్మ్యనుగృహీతోఽస్మి యస్య మే మునిపుంగవ\nయజ్ఞోపసదనం బ్రహ్మన్ ప్రాప్తోఽసి మునిభిః సహ |",
+      "translationTe": "\"మునిశ్రేష్ఠా, బ్రహ్మర్షీ! మునులతో కలిసి నా యజ్ఞశాలకు మీరు వచ్చారు; నేను ధన్యుడిని, అనుగ్రహం పొందినవాడిని."
     },
     {
       "id": "1.50.15",
@@ -917,78 +1463,108 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "brahmarSe",
-          "iast": "brahmarṣe",
-          "devanagari": "ब्रह्मर्षे",
-          "meaning": "oh, Brahma-sage",
-          "anvayaIndex": 0,
-          "verseIndex": 3
-        },
-        {
-          "itrans": "maniiSiNaH",
-          "iast": "manīṣiṇaḥ",
-          "devanagari": "मनीषिणः",
-          "meaning": "scholars",
-          "anvayaIndex": 1,
-          "verseIndex": 6
-        },
-        {
-          "itrans": "dvaadasha aham tu",
-          "iast": "dvādaśa aham tu",
-          "devanagari": "द्वादश अहं तु",
-          "meaning": "twelve, days, only",
-          "anvayaIndex": 2,
+          "itrans": "dvaadashaaham tu",
+          "iast": "dvādaśāham tu",
+          "devanagari": "द्वादशाहम् तु",
+          "telugu": "ద్వాదశాహమ్ తు",
+          "meaning": "twelve days",
+          "meaningTe": "ఇంకా పన్నెండు రోజులు ఉన్నాయని",
+          "anvayaIndex": 3,
           "verseIndex": 0
         },
         {
-          "itrans": "diikshaam",
-          "iast": "dīkśām",
-          "devanagari": "दीक्शां",
-          "meaning": "ritual-pledge",
-          "anvayaIndex": 3,
-          "verseIndex": 4
+          "itrans": "brahmarShe",
+          "iast": "brahmarṣe",
+          "devanagari": "ब्रह्मर्षे",
+          "telugu": "బ్రహ్మర్షే",
+          "meaning": "O brahmarṣi",
+          "meaningTe": "బ్రహ్మర్షీ",
+          "anvayaIndex": 0,
+          "verseIndex": 1
         },
         {
-          "itrans": "[sheSam",
-          "iast": "[śeṣam",
-          "devanagari": "[शेषं",
-          "meaning": "remaining]",
-          "anvayaIndex": 4,
-          "verseIndex": null
+          "itrans": "diikShaam",
+          "iast": "dīkṣām",
+          "devanagari": "दीक्षाम्",
+          "telugu": "దీక్షామ్",
+          "meaning": "the consecration",
+          "meaningTe": "దీక్షకు",
+          "anvayaIndex": 2,
+          "verseIndex": 2
         },
         {
           "itrans": "aahuH",
           "iast": "āhuḥ",
           "devanagari": "आहुः",
-          "meaning": "they are saying",
+          "telugu": "ఆహుః",
+          "meaning": "say",
+          "meaningTe": "చెబుతున్నారు",
           "anvayaIndex": 5,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "maniiShiNaH",
+          "iast": "manīṣiṇaḥ",
+          "devanagari": "मनीषिणः",
+          "telugu": "మనీషిణః",
+          "meaning": "the learned",
+          "meaningTe": "పండితులు",
+          "anvayaIndex": 4,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "tataH",
+          "iast": "tataḥ",
+          "devanagari": "ततः",
+          "telugu": "తతః",
+          "meaning": "then",
+          "meaningTe": "ఆ తర్వాత",
+          "anvayaIndex": 6,
           "verseIndex": 5
+        },
+        {
+          "itrans": "bhaagaarthinaH",
+          "iast": "bhāgārthinaḥ",
+          "devanagari": "भागार्थिनः",
+          "telugu": "భాగార్థినః",
+          "meaning": "seeking their shares",
+          "meaningTe": "తమ భాగాలు కోరి వచ్చే",
+          "anvayaIndex": 7,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "devaan",
+          "iast": "devān",
+          "devanagari": "देवान्",
+          "telugu": "దేవాన్",
+          "meaning": "the gods",
+          "meaningTe": "దేవతలను",
+          "anvayaIndex": 8,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "draShTum arhasi",
+          "iast": "draṣṭum arhasi",
+          "devanagari": "द्रष्टुम् अर्हसि",
+          "telugu": "ద్రష్టుమ్ అర్హసి",
+          "meaning": "you may see",
+          "meaningTe": "మీరు చూడవచ్చు",
+          "anvayaIndex": 9,
+          "verseIndex": 8
         },
         {
           "itrans": "kaushika",
           "iast": "kauśika",
           "devanagari": "कौशिक",
-          "meaning": "oh, Kaushika",
-          "anvayaIndex": 6,
-          "verseIndex": 14
-        },
-        {
-          "itrans": "tataH bhaaga arthinaH devaan",
-          "iast": "tataḥ bhāga arthinaḥ devān",
-          "devanagari": "ततः भाग अर्थिनः देवान्",
-          "meaning": "then [after those twelve days,] their due, desirers of, gods",
-          "anvayaIndex": 7,
-          "verseIndex": 7
-        },
-        {
-          "itrans": "draSTum arhasi",
-          "iast": "draṣṭum arhasi",
-          "devanagari": "द्रष्टुं अर्हसि",
-          "meaning": "to see, apt of you.",
-          "anvayaIndex": 8,
-          "verseIndex": null
+          "telugu": "కౌశిక",
+          "meaning": "O Kauśika",
+          "meaningTe": "కౌశికా",
+          "anvayaIndex": 1,
+          "verseIndex": 9
         }
-      ]
+      ],
+      "telugu": "ద్వాదశాహం తు బ్రహ్మర్షే దీక్షామాహుర్మనీషిణః\nతతో భాగార్థినో దేవాన్ ద్రష్టుమర్హసి కౌశిక |",
+      "translationTe": "\"బ్రహ్మర్షీ, కౌశికా! దీక్షకు ఇంకా పన్నెండు రోజులు ఉన్నాయని పండితులు చెబుతున్నారు. ఆ తర్వాత తమ భాగాలు కోరి వచ్చే దేవతలను మీరు చూడవచ్చు.\""
     },
     {
       "id": "1.50.16",
@@ -1002,46 +1578,108 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "nR^ipaH",
-          "iast": "nṛpaḥ",
-          "devanagari": "नृपः",
-          "meaning": "king",
-          "anvayaIndex": 0,
-          "verseIndex": 12
-        },
-        {
-          "itrans": "muni shaarduulam iti uktvaa",
-          "iast": "muni śārdūlam iti uktvā",
-          "devanagari": "मुनि शार्दूलं इति उक्त्वा",
-          "meaning": "to sage, the tiger, in this way, on saying",
+          "itrans": "iti uktvaa",
+          "iast": "iti uktvā",
+          "devanagari": "इति उक्त्वा",
+          "telugu": "ఇతి ఉక్త్వా",
+          "meaning": "having said thus",
+          "meaningTe": "ఇలా చెప్పి",
           "anvayaIndex": 1,
           "verseIndex": 0
         },
         {
-          "itrans": "tadaa prahR^iSTa vadanaH",
-          "iast": "tadā prahṛṣṭa vadanaḥ",
-          "devanagari": "तदा प्रहृष्ट वदनः",
-          "meaning": "then, with gladdened, face",
+          "itrans": "munishaarduulam",
+          "iast": "muniśārdūlam",
+          "devanagari": "मुनिशार्दूलम्",
+          "telugu": "మునిశార్దూలమ్",
+          "meaning": "to the tiger among sages",
+          "meaningTe": "మునిశ్రేష్ఠుడితో",
+          "anvayaIndex": 0,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "prahR^iShTavadanaH",
+          "iast": "prahṛṣṭavadanaḥ",
+          "devanagari": "प्रहृष्टवदनः",
+          "telugu": "ప్రహృష్టవదనః",
+          "meaning": "with a joyful face",
+          "meaningTe": "సంతోషమైన ముఖంతో",
+          "anvayaIndex": 3,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "tadaa",
+          "iast": "tadā",
+          "devanagari": "तदा",
+          "telugu": "తదా",
+          "meaning": "then",
+          "meaningTe": "అప్పుడు",
           "anvayaIndex": 2,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "punaH",
+          "iast": "punaḥ",
+          "devanagari": "पुनः",
+          "telugu": "పునః",
+          "meaning": "again",
+          "meaningTe": "మళ్ళీ",
+          "anvayaIndex": 7,
           "verseIndex": 4
         },
         {
-          "itrans": "praanjaliH prayataH",
-          "iast": "prānjaliḥ prayataḥ",
-          "devanagari": "प्रान्जलिः प्रयतः",
-          "meaning": "palms-enfolded, inquisitively",
-          "anvayaIndex": 3,
-          "verseIndex": 10
+          "itrans": "tam",
+          "iast": "tam",
+          "devanagari": "तम्",
+          "telugu": "తమ్",
+          "meaning": "him",
+          "meaningTe": "ఆయనను",
+          "anvayaIndex": 8,
+          "verseIndex": 5
         },
         {
-          "itrans": "punaH tam paripapracCha",
-          "iast": "punaḥ tam paripapraccha",
-          "devanagari": "पुनः तं परिपप्रच्छ",
-          "meaning": "again, him [Vishvamitra,] pointedly asked.",
+          "itrans": "paripaprachCha",
+          "iast": "paripapraccha",
+          "devanagari": "परिपप्रच्छ",
+          "telugu": "పరిపప్రచ్ఛ",
+          "meaning": "asked",
+          "meaningTe": "అడిగాడు",
+          "anvayaIndex": 9,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "praa~njaliH",
+          "iast": "prāñjaliḥ",
+          "devanagari": "प्राञ्जलिः",
+          "telugu": "ప్రాంజలిః",
+          "meaning": "with joined palms",
+          "meaningTe": "చేతులు జోడించి",
           "anvayaIndex": 4,
           "verseIndex": 7
+        },
+        {
+          "itrans": "prayataH",
+          "iast": "prayataḥ",
+          "devanagari": "प्रयतः",
+          "telugu": "ప్రయతః",
+          "meaning": "disciplined",
+          "meaningTe": "నియమంతో",
+          "anvayaIndex": 5,
+          "verseIndex": 8
+        },
+        {
+          "itrans": "nR^ipaH",
+          "iast": "nṛpaḥ",
+          "devanagari": "नृपः",
+          "telugu": "నృపః",
+          "meaning": "the king",
+          "meaningTe": "రాజు",
+          "anvayaIndex": 6,
+          "verseIndex": 9
         }
-      ]
+      ],
+      "telugu": "ఇత్యుక్త్వా మునిశార్దూలం ప్రహృష్టవదనస్తదా\nపునస్తం పరిపప్రచ్ఛ ప్రాంజలిః ప్రయతో నృపః |",
+      "translationTe": "మునిశ్రేష్ఠుడితో ఇలా చెప్పి, సంతోషమైన ముఖంతో, చేతులు జోడించి, నియమంతో రాజు మళ్ళీ ఆయనను అడిగాడు."
     },
     {
       "id": "1.50.17",
@@ -1059,182 +1697,208 @@
       ],
       "glosses": [
         {
-          "itrans": "mune",
-          "iast": "mune",
-          "devanagari": "मुने",
-          "meaning": "oh, saint",
-          "anvayaIndex": 0,
-          "verseIndex": 43
+          "itrans": "imau kumaarau",
+          "iast": "imau kumārau",
+          "devanagari": "इमौ कुमारौ",
+          "telugu": "ఇమౌ కుమారౌ",
+          "meaning": "these two youths",
+          "meaningTe": "ఈ ఇద్దరు కుమారులు",
+          "anvayaIndex": 10,
+          "verseIndex": 0
         },
         {
-          "itrans": "te bhadram",
-          "iast": "te bhadram",
-          "devanagari": "ते भद्रं",
-          "meaning": "you, be safe",
+          "itrans": "bhadram te",
+          "iast": "bhadram te",
+          "devanagari": "भद्रम् ते",
+          "telugu": "భద్రమ్ తే",
+          "meaning": "good be to you",
+          "meaningTe": "నీకు శుభం",
           "anvayaIndex": 1,
+          "verseIndex": 1
+        },
+        {
+          "itrans": "devatulyaparaakramau",
+          "iast": "devatulyaparākramau",
+          "devanagari": "देवतुल्यपराक्रमौ",
+          "telugu": "దేవతుల్యపరాక్రమౌ",
+          "meaning": "equal to gods in valour",
+          "meaningTe": "దేవతలతో సమానమైన పరాక్రమం గల",
+          "anvayaIndex": 2,
           "verseIndex": 2
         },
         {
-          "itrans": "deva tulya paraakramau",
-          "iast": "deva tulya parākramau",
-          "devanagari": "देव तुल्य पराक्रमौ",
-          "meaning": "with god Vishnu, matching, in valour",
-          "anvayaIndex": 2,
-          "verseIndex": 4
-        },
-        {
-          "itrans": "gaja simha gatii",
-          "iast": "gaja simha gatī",
-          "devanagari": "गज सिम्ह गती",
-          "meaning": "[like audacious] elephant, [like arrogant] lion, with strides",
+          "itrans": "gajasiMhagatii",
+          "iast": "gajasiṃhagatī",
+          "devanagari": "गजसिंहगती",
+          "telugu": "గజసింహగతీ",
+          "meaning": "with the gait of elephants and lions",
+          "meaningTe": "ఏనుగుల్లా సింహాల్లా నడిచే",
           "anvayaIndex": 3,
-          "verseIndex": null
+          "verseIndex": 3
         },
         {
           "itrans": "viirau",
           "iast": "vīrau",
           "devanagari": "वीरौ",
-          "meaning": "two valrous ones",
-          "anvayaIndex": 4,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "shaarduula vR^iSabha upamau",
-          "iast": "śārdūla vṛṣabha upamau",
-          "devanagari": "शार्दूल वृषभ उपमौ",
-          "meaning": "[adventurous] tiger, [adamantine] Holy Bull, in similitude",
-          "anvayaIndex": 5,
-          "verseIndex": 11
-        },
-        {
-          "itrans": "padma patra vishaala akSau",
-          "iast": "padma patra viśāla akṣau",
-          "devanagari": "पद्म पत्र विशाल अक्षौ",
-          "meaning": "lotus, petal, broad, eyed ones",
-          "anvayaIndex": 6,
-          "verseIndex": 14
-        },
-        {
-          "itrans": "khaDga tuuNii dhanuH dharau",
-          "iast": "khaḍga tūṇī dhanuḥ dharau",
-          "devanagari": "खड्ग तूणी धनुः धरौ",
-          "meaning": "sword, quiver, bow, wielding",
-          "anvayaIndex": 7,
-          "verseIndex": 18
-        },
-        {
-          "itrans": "ruupeNa ashvinau iva",
-          "iast": "rūpeṇa aśvinau iva",
-          "devanagari": "रूपेण अश्विनौ इव",
-          "meaning": "by physique, Ashwin, the Twin-god brothers, like",
-          "anvayaIndex": 8,
-          "verseIndex": 22
-        },
-        {
-          "itrans": "sam upasthita yauvanau",
-          "iast": "sam upasthita yauvanau",
-          "devanagari": "सं उपस्थित यौवनौ",
-          "meaning": "in the offing, youthfulness is",
+          "telugu": "వీరౌ",
+          "meaning": "heroic",
+          "meaningTe": "వీరులైన",
           "anvayaIndex": 9,
-          "verseIndex": 25
+          "verseIndex": 4
         },
         {
-          "itrans": "deva lokaat",
-          "iast": "deva lokāt",
-          "devanagari": "देव लोकात्",
-          "meaning": "from gods', abode",
-          "anvayaIndex": 10,
-          "verseIndex": 31
+          "itrans": "shaarduulavR^iShabhopamau",
+          "iast": "śārdūlavṛṣabhopamau",
+          "devanagari": "शार्दूलवृषभोपमौ",
+          "telugu": "శార్దూలవృషభోపమౌ",
+          "meaning": "like tigers and bulls",
+          "meaningTe": "పులుల్లా ఎద్దుల్లా ఉన్న",
+          "anvayaIndex": 4,
+          "verseIndex": 5
         },
         {
-          "itrans": "yadR^icChayaa iva",
-          "iast": "yadṛcchayā iva",
-          "devanagari": "यदृच्छया इव",
-          "meaning": "= at their pleasure, as if",
-          "anvayaIndex": 11,
-          "verseIndex": null
+          "itrans": "padmapatravishaalaakShau",
+          "iast": "padmapatraviśālākṣau",
+          "devanagari": "पद्मपत्रविशालाक्षौ",
+          "telugu": "పద్మపత్రవిశాలాక్షౌ",
+          "meaning": "with large lotus-petal eyes",
+          "meaningTe": "పద్మపత్రాల్లాంటి విశాలమైన కళ్ళు గల",
+          "anvayaIndex": 5,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "khaDgatuuNiidhanurdharau",
+          "iast": "khaḍgatūṇīdhanurdharau",
+          "devanagari": "खड्गतूणीधनुर्धरौ",
+          "telugu": "ఖడ్గతూణీధనుర్ధరౌ",
+          "meaning": "bearing swords, quivers and bows",
+          "meaningTe": "ఖడ్గం అమ్ములపొది ధనుస్సు ధరించిన",
+          "anvayaIndex": 6,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "ashvinau iva ruupeNa",
+          "iast": "aśvinau iva rūpeṇa",
+          "devanagari": "अश्विनौ इव रूपेण",
+          "telugu": "అశ్వినౌ ఇవ రూపేణ",
+          "meaning": "like the Aśvins in form",
+          "meaningTe": "రూపంలో అశ్వినీదేవతల్లా ఉన్న",
+          "anvayaIndex": 7,
+          "verseIndex": 8
+        },
+        {
+          "itrans": "samupasthitayauvanau",
+          "iast": "samupasthitayauvanau",
+          "devanagari": "समुपस्थितयौवनौ",
+          "telugu": "సముపస్థితయౌవనౌ",
+          "meaning": "come into youth",
+          "meaningTe": "యౌవనం వచ్చిన",
+          "anvayaIndex": 8,
+          "verseIndex": 9
+        },
+        {
+          "itrans": "yadR^ichChayaa eva",
+          "iast": "yadṛcchayā eva",
+          "devanagari": "यदृच्छया एव",
+          "telugu": "యదృచ్ఛయా ఏవ",
+          "meaning": "by chance",
+          "meaningTe": "యాదృచ్ఛికంగా",
+          "anvayaIndex": 12,
+          "verseIndex": 10
         },
         {
           "itrans": "gaam praaptau",
           "iast": "gām prāptau",
-          "devanagari": "गां प्राप्तौ",
-          "meaning": "on earth, chanced",
-          "anvayaIndex": 12,
-          "verseIndex": 29
-        },
-        {
-          "itrans": "a marau",
-          "iast": "a marau",
-          "devanagari": "अ मरौ",
-          "meaning": "not, dying ones [deathless, immortals]",
+          "devanagari": "गाम् प्राप्तौ",
+          "telugu": "గామ్ ప్రాప్తౌ",
+          "meaning": "come to earth",
+          "meaningTe": "భూమికి వచ్చిన",
           "anvayaIndex": 13,
-          "verseIndex": 34
+          "verseIndex": 11
         },
         {
-          "itrans": "iva",
-          "iast": "iva",
-          "devanagari": "इव",
-          "meaning": "as if like",
+          "itrans": "devalokaat",
+          "iast": "devalokāt",
+          "devanagari": "देवलोकात्",
+          "telugu": "దేవలోకాత్",
+          "meaning": "from the world of gods",
+          "meaningTe": "దేవలోకం నుండి",
+          "anvayaIndex": 11,
+          "verseIndex": 12
+        },
+        {
+          "itrans": "iva amarau",
+          "iast": "iva amarau",
+          "devanagari": "इव अमरौ",
+          "telugu": "ఇవ అమరౌ",
+          "meaning": "like immortals",
+          "meaningTe": "అమరుల్లా",
           "anvayaIndex": 14,
-          "verseIndex": 33
-        },
-        {
-          "itrans": "imau kumaarau",
-          "iast": "imau kumārau",
-          "devanagari": "इमौ कुमारौ",
-          "meaning": "these, youngsters",
-          "anvayaIndex": 15,
-          "verseIndex": 0
-        },
-        {
-          "itrans": "iha",
-          "iast": "iha",
-          "devanagari": "इह",
-          "meaning": "here, to this place",
-          "anvayaIndex": 16,
-          "verseIndex": 37
-        },
-        {
-          "itrans": "padbhyaam",
-          "iast": "padbhyām",
-          "devanagari": "पद्भ्यां",
-          "meaning": "with two feet - by footslogging",
-          "anvayaIndex": 17,
-          "verseIndex": 36
+          "verseIndex": 13
         },
         {
           "itrans": "katham",
           "iast": "katham",
-          "devanagari": "कथं",
+          "devanagari": "कथम्",
+          "telugu": "కథమ్",
           "meaning": "how",
+          "meaningTe": "ఎలా",
+          "anvayaIndex": 17,
+          "verseIndex": 14
+        },
+        {
+          "itrans": "padbhyaam",
+          "iast": "padbhyām",
+          "devanagari": "पद्भ्याम्",
+          "telugu": "పద్భ్యామ్",
+          "meaning": "on foot",
+          "meaningTe": "కాలినడకన",
+          "anvayaIndex": 15,
+          "verseIndex": 15
+        },
+        {
+          "itrans": "iha praaptau",
+          "iast": "iha prāptau",
+          "devanagari": "इह प्राप्तौ",
+          "telugu": "ఇహ ప్రాప్తౌ",
+          "meaning": "have come here",
+          "meaningTe": "ఇక్కడికి వచ్చారు",
+          "anvayaIndex": 16,
+          "verseIndex": 16
+        },
+        {
+          "itrans": "kimartham",
+          "iast": "kimartham",
+          "devanagari": "किमर्थम्",
+          "telugu": "కిమర్థమ్",
+          "meaning": "why",
+          "meaningTe": "ఎందుకు",
           "anvayaIndex": 18,
-          "verseIndex": 35
-        },
-        {
-          "itrans": "kim artham",
-          "iast": "kim artham",
-          "devanagari": "किं अर्थं",
-          "meaning": "what, for",
-          "anvayaIndex": 19,
-          "verseIndex": 39
-        },
-        {
-          "itrans": "praaptau",
-          "iast": "prāptau",
-          "devanagari": "प्राप्तौ",
-          "meaning": "how, they chanced",
-          "anvayaIndex": 20,
-          "verseIndex": 38
+          "verseIndex": 17
         },
         {
           "itrans": "kasya vaa",
           "iast": "kasya vā",
           "devanagari": "कस्य वा",
-          "meaning": "whose [scions,] are they.",
-          "anvayaIndex": 21,
-          "verseIndex": 41
+          "telugu": "కస్య వా",
+          "meaning": "or whose",
+          "meaningTe": "ఎవరి వాళ్ళు",
+          "anvayaIndex": 19,
+          "verseIndex": 18
+        },
+        {
+          "itrans": "mune",
+          "iast": "mune",
+          "devanagari": "मुने",
+          "telugu": "మునే",
+          "meaning": "O sage",
+          "meaningTe": "మునీ",
+          "anvayaIndex": 0,
+          "verseIndex": 19
         }
-      ]
+      ],
+      "telugu": "ఇమౌ కుమారౌ భద్రం తే దేవతుల్యపరాక్రమౌ\nగజసింహగతీ వీరౌ శార్దూలవృషభోపమౌ |\nపద్మపత్రవిశాలాక్షౌ ఖడ్గతూణీధనుర్ధరౌ |\nఅశ్వినావివ రూపేణ సముపస్థితయౌవనౌ\nయదృచ్ఛయైవ గాం ప్రాప్తౌ దేవలోకాదివామరౌ |\nకథం పద్భ్యామిహ ప్రాప్తౌ కిమర్థం కస్య వా మునే",
+      "translationTe": "\"మునీ! నీకు శుభం. దేవతలతో సమానమైన పరాక్రమం గల, ఏనుగుల్లా సింహాల్లా నడిచే, పులుల్లా ఎద్దుల్లా ఉన్న, పద్మపత్రాల్లాంటి విశాలమైన కళ్ళు గల, ఖడ్గం అమ్ములపొది ధనుస్సు ధరించిన, రూపంలో అశ్వినీదేవతల్లా ఉన్న, యౌవనం వచ్చిన ఈ వీరులైన ఇద్దరు కుమారులు — దేవలోకం నుండి యాదృచ్ఛికంగా భూమికి వచ్చిన అమరుల్లా — కాలినడకన ఇక్కడికి ఎలా వచ్చారు? ఎందుకు? ఎవరి వాళ్ళు?"
     },
     {
       "id": "1.50.20",
@@ -1251,86 +1915,138 @@
       ],
       "glosses": [
         {
-          "itrans": "mahaa mune",
-          "iast": "mahā mune",
-          "devanagari": "महा मुने",
-          "meaning": "oh, great-saint",
-          "anvayaIndex": 0,
-          "verseIndex": 6
-        },
-        {
-          "itrans": "vara aayudha dharau viirau",
-          "iast": "vara āyudha dharau vīrau",
-          "devanagari": "वर आयुध धरौ वीरौ",
-          "meaning": "best, weapons, brandishing, valiant ones",
+          "itrans": "varaayudhadharau",
+          "iast": "varāyudhadharau",
+          "devanagari": "वरायुधधरौ",
+          "telugu": "వరాయుధధరౌ",
+          "meaning": "bearing fine weapons",
+          "meaningTe": "శ్రేష్ఠ ఆయుధాలు ధరించిన",
           "anvayaIndex": 1,
           "verseIndex": 0
-        },
-        {
-          "itrans": "kasya putrau",
-          "iast": "kasya putrau",
-          "devanagari": "कस्य पुत्रौ",
-          "meaning": "whose, sons are they",
-          "anvayaIndex": 2,
-          "verseIndex": 4
-        },
-        {
-          "itrans": "candra suuryau ambaram iva",
-          "iast": "candra sūryau ambaram iva",
-          "devanagari": "चन्द्र सूर्यौ अम्बरं इव",
-          "meaning": "Moon, Sun, [brightening the] sky, as with",
-          "anvayaIndex": 3,
-          "verseIndex": 10
-        },
-        {
-          "itrans": "imam desham bhuuSayantau",
-          "iast": "imam deśam bhūṣayantau",
-          "devanagari": "इमं देशं भूषयन्तौ",
-          "meaning": "this, province, they are embellishing",
-          "anvayaIndex": 4,
-          "verseIndex": 7
-        },
-        {
-          "itrans": "pramaaNa ingita ceSTitaiH",
-          "iast": "pramāṇa ingita ceṣṭitaiḥ",
-          "devanagari": "प्रमाण इन्गित चेष्टितैः",
-          "meaning": "by postural [language,] by facial [language,] by body [language]",
-          "anvayaIndex": 5,
-          "verseIndex": 16
-        },
-        {
-          "itrans": "parasparasya sadR^ishau",
-          "iast": "parasparasya sadṛśau",
-          "devanagari": "परस्परस्य सदृशौ",
-          "meaning": "each to each, clonal",
-          "anvayaIndex": 6,
-          "verseIndex": 14
-        },
-        {
-          "itrans": "kaaka pakSa dharau",
-          "iast": "kāka pakṣa dharau",
-          "devanagari": "काक पक्ष धरौ",
-          "meaning": "crow, wing [similar jet-black curls,] wearing",
-          "anvayaIndex": 7,
-          "verseIndex": 19
         },
         {
           "itrans": "viirau",
           "iast": "vīrau",
           "devanagari": "वीरौ",
-          "meaning": "about valorous ones",
-          "anvayaIndex": 8,
-          "verseIndex": 22
+          "telugu": "వీరౌ",
+          "meaning": "heroes",
+          "meaningTe": "ఈ వీరులు",
+          "anvayaIndex": 2,
+          "verseIndex": 1
         },
         {
-          "itrans": "tattvataH shrotum icChaami",
-          "iast": "tattvataḥ śrotum icchāmi",
-          "devanagari": "तत्त्वतः श्रोतुं इच्छामि",
-          "meaning": "in actuality to listen, I wish.",
+          "itrans": "kasya putrau",
+          "iast": "kasya putrau",
+          "devanagari": "कस्य पुत्रौ",
+          "telugu": "కస్య పుత్రౌ",
+          "meaning": "whose sons",
+          "meaningTe": "ఎవరి కొడుకులు",
+          "anvayaIndex": 3,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "mahaamune",
+          "iast": "mahāmune",
+          "devanagari": "महामुने",
+          "telugu": "మహామునే",
+          "meaning": "O great sage",
+          "meaningTe": "మహామునీ",
+          "anvayaIndex": 0,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "bhuuShayantau",
+          "iast": "bhūṣayantau",
+          "devanagari": "भूषयन्तौ",
+          "telugu": "భూషయంతౌ",
+          "meaning": "adorning",
+          "meaningTe": "అలంకరిస్తున్నారు",
+          "anvayaIndex": 6,
+          "verseIndex": 4
+        },
+        {
+          "itrans": "imam desham",
+          "iast": "imam deśam",
+          "devanagari": "इमम् देशम्",
+          "telugu": "ఇమమ్ దేశమ్",
+          "meaning": "this land",
+          "meaningTe": "ఈ దేశాన్ని",
+          "anvayaIndex": 5,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "chandrasuuryau iva ambaram",
+          "iast": "candrasūryau iva ambaram",
+          "devanagari": "चन्द्रसूर्यौ इव अम्बरम्",
+          "telugu": "చంద్రసూర్యౌ ఇవ అంబరమ్",
+          "meaning": "like the moon and sun the sky",
+          "meaningTe": "ఆకాశాన్ని చంద్రసూర్యుల్లా",
+          "anvayaIndex": 4,
+          "verseIndex": 6
+        },
+        {
+          "itrans": "parasparasya sadR^ishau",
+          "iast": "parasparasya sadṛśau",
+          "devanagari": "परस्परस्य सदृशौ",
+          "telugu": "పరస్పరస్య సదృశౌ",
+          "meaning": "like each other",
+          "meaningTe": "ఒకరికొకరు సమానులు",
+          "anvayaIndex": 8,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "pramaaNe~NgitacheShTitaiH",
+          "iast": "pramāṇeṅgitaceṣṭitaiḥ",
+          "devanagari": "प्रमाणेङ्गितचेष्टितैः",
+          "telugu": "ప్రమాణేంగితచేష్టితైః",
+          "meaning": "in build, gestures and movements",
+          "meaningTe": "ఎత్తులో, హావభావాలలో, నడవడికలో",
+          "anvayaIndex": 7,
+          "verseIndex": 8
+        },
+        {
+          "itrans": "kaakapakShadharau",
+          "iast": "kākapakṣadharau",
+          "devanagari": "काकपक्षधरौ",
+          "telugu": "కాకపక్షధరౌ",
+          "meaning": "wearing side-locks",
+          "meaningTe": "కాకిరెక్కల జుట్టు గల",
           "anvayaIndex": 9,
-          "verseIndex": 23
+          "verseIndex": 9
+        },
+        {
+          "itrans": "viirau",
+          "iast": "vīrau",
+          "devanagari": "वीरौ",
+          "telugu": "వీరౌ",
+          "meaning": "heroes",
+          "meaningTe": "ఈ వీరుల గురించి",
+          "anvayaIndex": 10,
+          "verseIndex": 10
+        },
+        {
+          "itrans": "shrotum ichChaami",
+          "iast": "śrotum icchāmi",
+          "devanagari": "श्रोतुम् इच्छामि",
+          "telugu": "శ్రోతుమ్ ఇచ్ఛామి",
+          "meaning": "I wish to hear",
+          "meaningTe": "వినాలనుకుంటున్నాను",
+          "anvayaIndex": 12,
+          "verseIndex": 11
+        },
+        {
+          "itrans": "tattvataH",
+          "iast": "tattvataḥ",
+          "devanagari": "तत्त्वतः",
+          "telugu": "తత్త్వతః",
+          "meaning": "truly",
+          "meaningTe": "యథార్థం",
+          "anvayaIndex": 11,
+          "verseIndex": 12
         }
-      ]
+      ],
+      "telugu": "వరాయుధధరౌ వీరౌ కస్య పుత్రౌ మహామునే |\nభూషయంతావిమం దేశం చంద్రసూర్యావివాంబరమ్\nపరస్పరస్య సదృశౌ ప్రమాణేంగితచేష్టితైః |\nకాకపక్షధరౌ వీరౌ శ్రోతుమిచ్ఛామి తత్త్వతః",
+      "translationTe": "\"మహామునీ! శ్రేష్ఠ ఆయుధాలు ధరించిన ఈ వీరులు ఎవరి కొడుకులు? ఆకాశాన్ని చంద్రసూర్యుల్లా ఈ దేశాన్ని అలంకరిస్తున్నారు; ఎత్తులో, హావభావాలలో, నడవడికలో ఒకరికొకరు సమానులు; కాకిరెక్కల జుట్టు గల ఈ వీరుల గురించి యథార్థం వినాలనుకుంటున్నాను.\""
     },
     {
       "id": "1.50.22",
@@ -1344,46 +2060,108 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaatmanaH tasya janakasya tat vacanam shrutvaa",
-          "iast": "mahātmanaḥ tasya janakasya tat vacanam śrutvā",
-          "devanagari": "महात्मनः तस्य जनकस्य तत् वचनं श्रुत्वा",
-          "meaning": "great-souled one, his, of Janaka, that, sentence, on hearing",
-          "anvayaIndex": 0,
+          "itrans": "tasya",
+          "iast": "tasya",
+          "devanagari": "तस्य",
+          "telugu": "తస్య",
+          "meaning": "his",
+          "meaningTe": "ఆయన",
+          "anvayaIndex": 1,
           "verseIndex": 0
         },
         {
-          "itrans": "a meya aatmaa",
-          "iast": "a meya ātmā",
-          "devanagari": "अ मेय आत्मा",
-          "meaning": "not, measurable, souled [anima having, Vishvamitra]",
-          "anvayaIndex": 1,
-          "verseIndex": 7
-        },
-        {
-          "itrans": "tau",
-          "iast": "tau",
-          "devanagari": "तौ",
-          "meaning": "them two - Rama, Lakshmana",
-          "anvayaIndex": 2,
-          "verseIndex": 11
-        },
-        {
-          "itrans": "dasharathasya putrau",
-          "iast": "daśarathasya putrau",
-          "devanagari": "दशरथस्य पुत्रौ",
-          "meaning": "as Dasharatha's, sons",
+          "itrans": "tat vachanam",
+          "iast": "tat vacanam",
+          "devanagari": "तत् वचनम्",
+          "telugu": "తత్ వచనమ్",
+          "meaning": "that word",
+          "meaningTe": "ఆ మాట",
           "anvayaIndex": 3,
-          "verseIndex": 9
+          "verseIndex": 1
+        },
+        {
+          "itrans": "shrutvaa",
+          "iast": "śrutvā",
+          "devanagari": "श्रुत्वा",
+          "telugu": "శ్రుత్వా",
+          "meaning": "hearing",
+          "meaningTe": "విని",
+          "anvayaIndex": 4,
+          "verseIndex": 2
+        },
+        {
+          "itrans": "janakasya",
+          "iast": "janakasya",
+          "devanagari": "जनकस्य",
+          "telugu": "జనకస్య",
+          "meaning": "of Janaka",
+          "meaningTe": "జనకుడి",
+          "anvayaIndex": 2,
+          "verseIndex": 3
+        },
+        {
+          "itrans": "mahaatmanaH",
+          "iast": "mahātmanaḥ",
+          "devanagari": "महात्मनः",
+          "telugu": "మహాత్మనః",
+          "meaning": "great-souled",
+          "meaningTe": "మహాత్ముడైన",
+          "anvayaIndex": 0,
+          "verseIndex": 4
         },
         {
           "itrans": "nyavedayat",
           "iast": "nyavedayat",
           "devanagari": "न्यवेदयत्",
-          "meaning": "submitted - announced.",
-          "anvayaIndex": 4,
+          "telugu": "న్యవేదయత్",
+          "meaning": "told",
+          "meaningTe": "చెప్పాడు",
+          "anvayaIndex": 9,
+          "verseIndex": 5
+        },
+        {
+          "itrans": "ameyaatmaa",
+          "iast": "ameyātmā",
+          "devanagari": "अमेयात्मा",
+          "telugu": "అమేయాత్మా",
+          "meaning": "of immeasurable spirit",
+          "meaningTe": "అపరిమిత ఆత్మశక్తి గల విశ్వామిత్రుడు",
+          "anvayaIndex": 5,
           "verseIndex": 6
+        },
+        {
+          "itrans": "putrau",
+          "iast": "putrau",
+          "devanagari": "पुत्रौ",
+          "telugu": "పుత్రౌ",
+          "meaning": "sons",
+          "meaningTe": "కొడుకులని",
+          "anvayaIndex": 8,
+          "verseIndex": 7
+        },
+        {
+          "itrans": "dasharathasya",
+          "iast": "daśarathasya",
+          "devanagari": "दशरथस्य",
+          "telugu": "దశరథస్య",
+          "meaning": "of Daśaratha",
+          "meaningTe": "దశరథుడి",
+          "anvayaIndex": 7,
+          "verseIndex": 8
+        },
+        {
+          "itrans": "tau",
+          "iast": "tau",
+          "devanagari": "तौ",
+          "telugu": "తౌ",
+          "meaning": "they",
+          "meaningTe": "వాళ్ళు",
+          "anvayaIndex": 6,
+          "verseIndex": 9
         }
-      ]
+      ],
+      "telugu": "తస్య తద్వచనం శ్రుత్వా జనకస్య మహాత్మనః |\nన్యవేదయదమేయాత్మా పుత్రౌ దశరథస్య తౌ",
+      "translationTe": "మహాత్ముడైన జనకుడి ఆ మాట విని, అపరిమిత ఆత్మశక్తి గల విశ్వామిత్రుడు వాళ్ళు దశరథుడి కొడుకులని చెప్పాడు."
     },
     {
       "id": "1.50.23",
@@ -1399,134 +2177,162 @@
       "notes": [],
       "glosses": [
         {
-          "itrans": "mahaatejaaH mahaamuniH vishvaamitraH",
-          "iast": "mahātejāḥ mahāmuniḥ viśvāmitraḥ",
-          "devanagari": "महातेजाः महामुनिः विश्वामित्रः",
-          "meaning": "great-resplendent one, great-saint, Vishvamitra",
-          "anvayaIndex": 0,
-          "verseIndex": null
-        },
-        {
-          "itrans": "siddha aashrama nivaasam ca",
-          "iast": "siddha āśrama nivāsam ca",
-          "devanagari": "सिद्ध आश्रम निवासं च",
-          "meaning": "Accomplishment, Hermitage, stopover in, also",
-          "anvayaIndex": 1,
+          "itrans": "siddhaashramanivaasam cha",
+          "iast": "siddhāśramanivāsam ca",
+          "devanagari": "सिद्धाश्रमनिवासम् च",
+          "telugu": "సిద్ధాశ్రమనివాసమ్ చ",
+          "meaning": "and the stay at Siddhāśrama",
+          "meaningTe": "సిద్ధాశ్రమ నివాసం",
+          "anvayaIndex": 2,
           "verseIndex": 0
         },
         {
-          "itrans": "tathaa",
-          "iast": "tathā",
-          "devanagari": "तथा",
-          "meaning": "like that",
-          "anvayaIndex": 2,
-          "verseIndex": 6
-        },
-        {
-          "itrans": "raakSasaanaam vadham",
-          "iast": "rākṣasānām vadham",
-          "devanagari": "राक्षसानां वधं",
-          "meaning": "demons, elimination",
+          "itrans": "raakShasaanaam vadham tathaa",
+          "iast": "rākṣasānām vadham tathā",
+          "devanagari": "राक्षसानाम् वधम् तथा",
+          "telugu": "రాక్షసానామ్ వధమ్ తథా",
+          "meaning": "and the slaying of the rākṣasas",
+          "meaningTe": "రాక్షసుల వధ",
           "anvayaIndex": 3,
-          "verseIndex": 4
+          "verseIndex": 1
         },
         {
-          "itrans": "avyagram tatra aagamanam",
-          "iast": "avyagram tatra āgamanam",
-          "devanagari": "अव्यग्रं तत्र आगमनं",
-          "meaning": "indefatigably, to there coming - travelling with him",
+          "itrans": "tatra aagamanam avyagram",
+          "iast": "tatra āgamanam avyagram",
+          "devanagari": "तत्र आगमनम् अव्यग्रम्",
+          "telugu": "తత్ర ఆగమనమ్ అవ్యగ్రమ్",
+          "meaning": "the fearless coming there",
+          "meaningTe": "నిర్భయంగా అక్కడికి రాక",
           "anvayaIndex": 4,
-          "verseIndex": 7
+          "verseIndex": 2
         },
         {
-          "itrans": "vishaalaayaaH darshanam ca",
-          "iast": "viśālāyāḥ darśanam ca",
-          "devanagari": "विशालायाः दर्शनं च",
-          "meaning": "City of Vishaala, beholding, also",
+          "itrans": "vishaalaayaaH cha darshanam",
+          "iast": "viśālāyāḥ ca darśanam",
+          "devanagari": "विशालायाः च दर्शनम्",
+          "telugu": "విశాలాయాః చ దర్శనమ్",
+          "meaning": "and the sight of Viśālā",
+          "meaningTe": "విశాలను చూడటం",
           "anvayaIndex": 5,
-          "verseIndex": 10
+          "verseIndex": 3
         },
         {
-          "itrans": "ahalyaa darshanam caiva",
-          "iast": "ahalyā darśanam caiva",
-          "devanagari": "अहल्या दर्शनं चैव",
-          "meaning": "Ahalya, seeing, also thus",
+          "itrans": "ahalyaadarshanam cha eva",
+          "iast": "ahalyādarśanam ca eva",
+          "devanagari": "अहल्यादर्शनम् च एव",
+          "telugu": "అహల్యాదర్శనమ్ చ ఏవ",
+          "meaning": "and the sight of Ahalyā",
+          "meaningTe": "అహల్య దర్శనం",
           "anvayaIndex": 6,
-          "verseIndex": 13
+          "verseIndex": 4
         },
         {
           "itrans": "gautamena samaagamam",
           "iast": "gautamena samāgamam",
-          "devanagari": "गौतमेन समागमं",
-          "meaning": "with Gautama, [Ahalya's] reuniting",
+          "devanagari": "गौतमेन समागमम्",
+          "telugu": "గౌతమేన సమాగమమ్",
+          "meaning": "the meeting with Gautama",
+          "meaningTe": "గౌతముడితో సమాగమం",
           "anvayaIndex": 7,
-          "verseIndex": 16
+          "verseIndex": 5
         },
         {
-          "itrans": "tathaa",
-          "iast": "tathā",
-          "devanagari": "तथा",
-          "meaning": "= likewise",
+          "itrans": "mahaadhanuShi jij~naasaam kartum",
+          "iast": "mahādhanuṣi jijñāsām kartum",
+          "devanagari": "महाधनुषि जिज्ञासाम् कर्तुम्",
+          "telugu": "మహాధనుషి జిజ్ఞాసామ్ కర్తుమ్",
+          "meaning": "to test the great bow",
+          "meaningTe": "మహాధనుస్సును పరీక్షించడానికి",
           "anvayaIndex": 8,
-          "verseIndex": 22
+          "verseIndex": 6
         },
         {
-          "itrans": "mahaa dhanuSi",
-          "iast": "mahā dhanuṣi",
-          "devanagari": "महा धनुषि",
-          "meaning": "of great, bow [of Shiva]",
+          "itrans": "aagamanam tathaa",
+          "iast": "āgamanam tathā",
+          "devanagari": "आगमनम् तथा",
+          "telugu": "ఆగమనమ్ తథా",
+          "meaning": "and the coming",
+          "meaningTe": "ఇక్కడికి రావడం",
           "anvayaIndex": 9,
-          "verseIndex": 18
-        },
-        {
-          "itrans": "jij~naasaam kartum",
-          "iast": "jijñāsām kartum",
-          "devanagari": "जिज्ञासां कर्तुं",
-          "meaning": "to know about - to have a grasp of it",
-          "anvayaIndex": 10,
-          "verseIndex": 19
-        },
-        {
-          "itrans": "aagamanam",
-          "iast": "āgamanam",
-          "devanagari": "आगमनं",
-          "meaning": "coming [hitherward]",
-          "anvayaIndex": 11,
-          "verseIndex": 21
+          "verseIndex": 7
         },
         {
           "itrans": "etat sarvam",
           "iast": "etat sarvam",
-          "devanagari": "एतत् सर्वं",
+          "devanagari": "एतत् सर्वम्",
+          "telugu": "ఏతత్ సర్వమ్",
           "meaning": "all this",
-          "anvayaIndex": 12,
-          "verseIndex": 23
+          "meaningTe": "ఇదంతా",
+          "anvayaIndex": 10,
+          "verseIndex": 8
         },
         {
-          "itrans": "mahaa aatmane janakaaya",
-          "iast": "mahā ātmane janakāya",
-          "devanagari": "महा आत्मने जनकाय",
-          "meaning": "to great-souled, Janaka",
-          "anvayaIndex": 13,
-          "verseIndex": null
+          "itrans": "mahaatejaaH",
+          "iast": "mahātejāḥ",
+          "devanagari": "महातेजाः",
+          "telugu": "మహాతేజాః",
+          "meaning": "greatly radiant",
+          "meaningTe": "మహాతేజస్వి అయిన",
+          "anvayaIndex": 0,
+          "verseIndex": 9
+        },
+        {
+          "itrans": "janakaaya mahaatmane",
+          "iast": "janakāya mahātmane",
+          "devanagari": "जनकाय महात्मने",
+          "telugu": "జనకాయ మహాత్మనే",
+          "meaning": "to the great-souled Janaka",
+          "meaningTe": "మహాత్ముడైన జనకుడికి",
+          "anvayaIndex": 11,
+          "verseIndex": 10
         },
         {
           "itrans": "nivedya",
           "iast": "nivedya",
           "devanagari": "निवेद्य",
-          "meaning": "on submitting - on informing",
-          "anvayaIndex": 14,
-          "verseIndex": 28
+          "telugu": "నివేద్య",
+          "meaning": "having told",
+          "meaningTe": "చెప్పి",
+          "anvayaIndex": 12,
+          "verseIndex": 11
         },
         {
           "itrans": "viraraama",
           "iast": "virarāma",
           "devanagari": "विरराम",
-          "meaning": "then, [he Vishvamitra] paused.",
-          "anvayaIndex": 15,
-          "verseIndex": 29
+          "telugu": "విరరామ",
+          "meaning": "fell silent",
+          "meaningTe": "ఊరుకున్నాడు",
+          "anvayaIndex": 13,
+          "verseIndex": 12
+        },
+        {
+          "itrans": "atha",
+          "iast": "atha",
+          "devanagari": "अथ",
+          "telugu": "అథ",
+          "meaning": "then",
+          "meaningTe": "అప్పుడు",
+          "anvayaIndex": 14,
+          "verseIndex": 13
+        },
+        {
+          "itrans": "vishvaamitraH mahaamuniH",
+          "iast": "viśvāmitraḥ mahāmuniḥ",
+          "devanagari": "विश्वामित्रः महामुनिः",
+          "telugu": "విశ్వామిత్రః మహామునిః",
+          "meaning": "the great sage Viśvāmitra",
+          "meaningTe": "మహాముని విశ్వామిత్రుడు",
+          "anvayaIndex": 1,
+          "verseIndex": 14
         }
-      ]
+      ],
+      "telugu": "సిద్ధాశ్రమనివాసం చ రాక్షసానాం వధం తథా |\nతత్రాగమనమవ్యగ్రం విశాలాయాశ్చ దర్శనమ్\nఅహల్యాదర్శనం చైవ గౌతమేన సమాగమమ్ |\nమహాధనుషి జిజ్ఞాసాం కర్తుమాగమనం తథా\nఏతత్సర్వం మహాతేజా జనకాయ మహాత్మనే |\nనివేద్య విరరామాథ విశ్వామిత్రో మహామునిః",
+      "translationTe": "మహాతేజస్వి అయిన మహాముని విశ్వామిత్రుడు సిద్ధాశ్రమ నివాసం, రాక్షసుల వధ, నిర్భయంగా అక్కడికి రాక, విశాలను చూడటం, అహల్య దర్శనం, గౌతముడితో సమాగమం, మహాధనుస్సును పరీక్షించడానికి ఇక్కడికి రావడం — ఇదంతా మహాత్ముడైన జనకుడికి చెప్పి ఊరుకున్నాడు."
     }
-  ]
+  ],
+  "telugu": {
+    "source": "translations/te/bala/50.txt",
+    "style": "vyavaharika"
+  }
 }
